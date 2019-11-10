@@ -1120,7 +1120,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 
 <recipe name="foodBaconAndEggs" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
 	<ingredient name="foodEgg" count="2"/>
-	<ingredient name="foodRawMeat" count="5"/>
+	<ingredient name="foodRawMeat" count="2"/>
 </recipe>
 
 <recipe name="foodBakedPotato" count="1" craft_area="campfire" tags="learnable,perkMasterChef">
@@ -1158,7 +1158,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="foodBoiledMeat" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
-	<ingredient name="foodRawMeat" count="5"/>
+	<ingredient name="foodRawMeat" count="1"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
 
@@ -1171,13 +1171,13 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="foodCharredMeat" count="1" craft_area="campfire" tags="perkMasterChef">
-	<ingredient name="foodRawMeat" count="5"/>
+	<ingredient name="foodRawMeat" count="1"/>
 </recipe>
 
 <recipe name="foodChiliDog" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
 	<ingredient name="foodCanChili" count="1"/>
 	<ingredient name="foodCornBread" count="1"/>
-	<ingredient name="foodRawMeat" count="5"/>
+	<ingredient name="foodRawMeat" count="1"/>
 </recipe>
 
 <recipe name="foodCornBread" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
@@ -1205,7 +1205,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="foodGrilledMeat" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable,perkMasterChef">
-	<ingredient name="foodRawMeat" count="5"/>
+	<ingredient name="foodRawMeat" count="1"/>
 </recipe>
 
 <recipe name="foodHoboStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
@@ -1237,7 +1237,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="foodSteakAndPotato" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable,perkMasterChef">
-	<ingredient name="foodRawMeat" count="5"/>
+	<ingredient name="foodRawMeat" count="2"/>
 	<ingredient name="foodCropPotato" count="2"/>
 	<ingredient name="foodCropMushrooms" count="2"/>
 	<ingredient name="resourceAnimalFat" count="1"/>
