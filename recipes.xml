@@ -1250,6 +1250,18 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
 
+<recipe name="foodCanMysteriousMeat" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+	<ingredient name="foodRottingFlesh" count="10"/>
+	<ingredient name="drugVitamins" count="1"/>
+	<ingredient name="drugAntibiotics" count="1"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<ingredient name="drinkCanEmpty" count="1"/>
+</recipe>
+
+<recipe name="foodDeathMeat" count="1" craft_area="campfire" tags="perkMasterChef">
+	<ingredient name="foodRottingFlesh" count="1"/>
+</recipe>
+
 <recipe name="forge" count="1" tags="learnable">
 	<ingredient name="resourceRockSmall" count="50"/>
 	<ingredient name="resourceClayLump" count="60"/>
