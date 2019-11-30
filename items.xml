@@ -93,7 +93,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
 		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -127,7 +127,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -191,7 +191,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -334,7 +334,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -382,7 +382,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -458,7 +458,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -518,7 +518,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -571,18 +571,18 @@ Mesh files no longer used:
 		<property name="UsePowerAttackAnimation" value="true"/>
 	</property>
 	<effect_group name="meleeToolShovelStone">
-		<passive_effect name="EntityDamage" operation="base_set" value="12"/> <!-- meleeToolShovelStone -->
+		<passive_effect name="EntityDamage" operation="base_set" value="9.6"/> <!-- meleeToolShovelStone -->
 		<passive_effect name="BlockDamage" operation="base_set" value="38.4"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="13.8" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="75,200" tier="1,6" tags="perkMiner69r"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
-		<passive_effect name="MaxRange" operation="base_set" value="2.8"/>
+		<passive_effect name="MaxRange" operation="base_set" value="2.6"/>
 		<passive_effect name="BlockRange" operation="base_set" value="4"/>
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
 		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -612,18 +612,18 @@ Mesh files no longer used:
 	<property name="SellableToTrader" value="true"/>
 	<property name="UnlockedBy" value="perkMiner69r,meleeToolIronSetSchematic"/>
 	<effect_group name="meleeToolShovelIron">
-		<passive_effect name="EntityDamage" operation="base_set" value="14.5"/> <!-- meleeToolShovelIron -->
+		<passive_effect name="EntityDamage" operation="base_set" value="11.6"/> <!-- meleeToolShovelIron -->
 		<passive_effect name="BlockDamage" operation="base_set" value="46"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="15.8" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="220,750" tier="1,6" tags="perkMiner69r"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
-		<passive_effect name="MaxRange" operation="base_set" value="2.8"/>
+		<passive_effect name="MaxRange" operation="base_set" value="2.6"/>
 		<passive_effect name="BlockRange" operation="base_set" value="4"/>
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -658,18 +658,18 @@ Mesh files no longer used:
 	<property name="UnlockedBy" value="meleeToolSteelSetSchematic"/>
 
 	<effect_group name="meleeToolShovelSteel">
-		<passive_effect name="EntityDamage" operation="base_set" value="21.8"/> <!-- meleeToolShovelSteel -->
+		<passive_effect name="EntityDamage" operation="base_set" value="17.4"/> <!-- meleeToolShovelSteel -->
 		<passive_effect name="BlockDamage" operation="base_set" value="69"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="15.8" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="300,1100" tier="1,6" tags="perkMiner69r"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
-		<passive_effect name="MaxRange" operation="base_set" value="2.8"/>
+		<passive_effect name="MaxRange" operation="base_set" value="2.6"/>
 		<passive_effect name="BlockRange" operation="base_set" value="4"/>
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -737,7 +737,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="SphereCastRadius" operation="base_set" value=".1"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="100"/>
@@ -819,7 +819,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="SphereCastRadius" operation="base_set" value=".1"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="100"/>
@@ -902,7 +902,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -999,7 +999,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
 		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -1011,6 +1011,7 @@ Mesh files no longer used:
 		<display_value name="dBleeding" value=".20"/> <!-- the bleeding proc is run by the perk -->
 	</effect_group>
 	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="base_add" value="5.1" tags="secondary"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="AttacksPerMinute" operation="base_add" value="-60" tags="secondary"/>
@@ -1092,7 +1093,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -1107,6 +1108,7 @@ Mesh files no longer used:
 		<display_value name="dBleeding" value=".20"/> <!-- the bleeding proc is run by the perk -->
 	</effect_group>
 	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="base_add" value="6" tags="secondary"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="AttacksPerMinute" operation="base_add" value="-60" tags="secondary"/>
@@ -1186,7 +1188,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -1200,6 +1202,7 @@ Mesh files no longer used:
 		<display_value name="dBleeding" value=".20"/> <!-- the bleeding proc is run by the perk -->
 	</effect_group>
 	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="base_add" value="6.7" tags="secondary"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="AttacksPerMinute" operation="base_add" value="-60" tags="secondary"/>
@@ -1281,7 +1284,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -1321,7 +1324,7 @@ Mesh files no longer used:
 
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
-		<property name="Sound_start" value="swoosh"/>
+		<property name="Sound_start" value="club_swinglight"/>
 		<property name="Sphere" value=".1"/>
 		<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
 
@@ -1340,7 +1343,7 @@ Mesh files no longer used:
 
 	<property class="Action1">
 		<property name="Class" value="DynamicMelee"/>
-		<property name="Sound_start" value="swoosh"/>
+		<property name="Sound_start" value="club_swingheavy"/>
 		<property name="Sphere" value=".15"/>
 		<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
 		<property name="UsePowerAttackAnimation" value="true"/>
@@ -1371,7 +1374,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
 		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -1411,7 +1414,7 @@ Mesh files no longer used:
 
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
-		<property name="Sound_start" value="swoosh"/>
+		<property name="Sound_start" value="club_swinglight"/>
 		<property name="Sphere" value=".1"/>
 		<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
 
@@ -1430,7 +1433,7 @@ Mesh files no longer used:
 
 	<property class="Action1">
 		<property name="Class" value="DynamicMelee"/>
-		<property name="Sound_start" value="swoosh"/>
+		<property name="Sound_start" value="club_swingheavy"/>
 		<property name="Sphere" value=".15"/>
 		<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
 		<property name="UsePowerAttackAnimation" value="true"/>
@@ -1461,7 +1464,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -1500,7 +1503,7 @@ Mesh files no longer used:
 
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
-		<property name="Sound_start" value="swoosh"/>
+		<property name="Sound_start" value="club_swinglight"/>
 		<property name="Sphere" value=".1"/>
 		<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
 
@@ -1513,7 +1516,7 @@ Mesh files no longer used:
 
 	<property class="Action1">
 		<property name="Class" value="DynamicMelee"/>
-		<property name="Sound_start" value="swoosh"/>
+		<property name="Sound_start" value="club_swingheavy"/>
 		<property name="Sphere" value=".15"/>
 		<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
 		<property name="UsePowerAttackAnimation" value="true"/>
@@ -1538,7 +1541,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -1628,7 +1631,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -1718,7 +1721,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -1879,7 +1882,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
 		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -1926,7 +1929,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -1974,7 +1977,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -2068,7 +2071,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
 		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -2152,7 +2155,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -2237,7 +2240,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -2308,7 +2311,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
 		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -2317,8 +2320,13 @@ Mesh files no longer used:
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
 
-		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="LeftKnucklesFPV" prefab="#Other/Items?Weapons/Melee/KnuckleWraps/knuckleWrapsLeft_Prefab.prefab" parentTransform="Propjoint" localPos="0,0,0" localRot="0,0,0"/>
-		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="LeftKnucklesFPV"/>
+		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="LeftKnuckles" prefab="#Other/Items?Weapons/Melee/KnuckleWraps/knuckleWrapsLeft_Prefab.prefab" parentTransform="Propjoint" localPos="0,0,0" localRot="0,0,0">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="LeftKnuckles" prefab="#Other/Items?Weapons/Melee/KnuckleWraps/knuckleWrapsLeft_Prefab.prefab" parentTransform="LeftHand" localPos="-0.0878,-0.0016,-0.0013" localRot="3.841982,9.94,94.3">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="LeftKnuckles"/>
 	</effect_group>
 
 	<effect_group name="Power Attack">
@@ -2379,7 +2387,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -2390,8 +2398,13 @@ Mesh files no longer used:
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
 
-		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="LeftKnucklesFPV" prefab="#Other/Items?Weapons/Melee/Knuckles/knuckles_Prefab.prefab" parentTransform="Propjoint" localPos="0,0,0" localRot="0,0,0"/>
-		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="LeftKnucklesFPV"/>
+		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="LeftKnuckles" prefab="#Other/Items?Weapons/Melee/Knuckles/knuckles_Prefab.prefab" parentTransform="Propjoint" localPos="0,0,0" localRot="0,0,0">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="LeftKnuckles" prefab="#Other/Items?Weapons/Melee/Knuckles/knuckles_Prefab.prefab" parentTransform="LeftHand" localPos="-0.0878,-0.0016,-0.0013" localRot="3.841982,9.94,94.3">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="LeftKnuckles"/>
 	</effect_group>
 
 	<effect_group name="Power Attack">
@@ -2420,7 +2433,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -2432,8 +2445,13 @@ Mesh files no longer used:
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
 		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="butcherHarvest"/>
 
-		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="LeftKnucklesFPV" prefab="#Other/Items?Weapons/Melee/Knuckles/knucklesSpiked_Prefab.prefab" parentTransform="Propjoint" localPos="0,0,0" localRot="0,0,0"/>
-		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="LeftKnucklesFPV"/>
+		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="LeftKnuckles" prefab="#Other/Items?Weapons/Melee/Knuckles/knucklesSpiked_Prefab.prefab" parentTransform="Propjoint" localPos="0,0,0" localRot="0,0,0">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="LeftKnuckles" prefab="#Other/Items?Weapons/Melee/Knuckles/knucklesSpiked_Prefab.prefab" parentTransform="LeftHand" localPos="-0.0878,-0.0016,-0.0013" localRot="3.841982,9.94,94.3">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="LeftKnuckles"/>
 	</effect_group>
 	<effect_group name="Power Attack">
 		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
@@ -2503,7 +2521,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -2836,7 +2854,7 @@ Mesh files no longer used:
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> <!-- 2s -->
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
@@ -2933,7 +2951,7 @@ Mesh files no longer used:
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> <!-- 4s -->
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
 		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
@@ -2994,6 +3012,7 @@ Mesh files no longer used:
 		<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
 		<property name="Reload_time" value="4.1"/>
 		<property name="Sound_start" value="mp5_fire"/>
+		<property name="Sound_loop" value="mp5_fire"/>
 		<property name="Sound_end" value="mp5_fire_end"/>
 		<property name="Sound_empty" value="dryfire"/>
 		<property name="Sound_reload" value="mp5_reload"/>
@@ -3029,7 +3048,7 @@ Mesh files no longer used:
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> <!-- 4s -->
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
 		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
@@ -3065,7 +3084,7 @@ Mesh files no longer used:
 
 <item name="gunBlunderbuss"> <!-- T1 shotguns -->
 	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,flaredBarrel,sideAttachments,smallTopAttachments,stock,attStrength,perkBoomstick,canHaveCosmetic"/>
-	<property name="DisplayType" value="rangedGun"/>
+	<property name="DisplayType" value="rangedShotgun"/>
 	<property name="HoldType" value="39"/>
 	<property name="Meshfile" value="#Other/Items?Weapons/Ranged/blunderbuss/blunderbussPrefab.prefab"/>
 	<property name="Material" value="Mmetal"/>
@@ -3123,7 +3142,7 @@ Mesh files no longer used:
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> <!-- 3.9s -->
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
 		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
 
@@ -3151,7 +3170,7 @@ Mesh files no longer used:
 
 <item name="gunDoubleBarrelShotgun"> <!-- T2 shotguns -->
 	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,stock,bottomAttachments,attStrength,perkBoomstick,doubleBarrel,canHaveCosmetic"/>
-	<property name="DisplayType" value="rangedGun"/>
+	<property name="DisplayType" value="rangedShotgun"/>
 	<property name="HoldType" value="56"/>
 	<property name="Meshfile" value="#Other/Items?Weapons/Ranged/DoubleBarrelShotgun/doubleBarrelShotgunPrefab.prefab"/>
 	<property name="Material" value="MShotgunParts"/> <property name="Weight" value="4"/>
@@ -3212,7 +3231,7 @@ Mesh files no longer used:
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> <!-- 2.3s -->
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
 		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
@@ -3238,7 +3257,7 @@ Mesh files no longer used:
 
 <item name="gunPumpShotgun"> <!-- T3 shotguns -->
 	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,stock,bottomAttachments,attStrength,perkBoomstick,modGunShotgunTubeExtenderMagazine,canHaveCosmetic"/>
-	<property name="DisplayType" value="rangedGun"/>
+	<property name="DisplayType" value="rangedShotgun"/>
 	<property name="HoldType" value="5"/>
 	<property name="Meshfile" value="#Other/Items?Weapons/Ranged/SawedOffPumpShotgun/PumpShotgunPrefab.prefab"/>
 	<property name="Material" value="MShotgunParts"/> <property name="Weight" value="6"/>
@@ -3299,7 +3318,7 @@ Mesh files no longer used:
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> <!-- 2.3s -->
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
 		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
@@ -3307,7 +3326,7 @@ Mesh files no longer used:
 
 		<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkBoomstick"/> <!-- random DegMax -->
 		<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05"/> <!-- random APM -->
-		<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122"/> <!-- random MagazineSize -->
+		<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.24"/> <!-- random MagazineSize -->
 		<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08"/> <!-- random WeaponHandling -->
 
 		<!-- set by the ammo <passive_effect name="SpreadDegreesVertical" operation="perc_add" value="0"/>  xxdummy shotgun
@@ -3390,7 +3409,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
 		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
@@ -3480,7 +3499,7 @@ Mesh files no longer used:
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> <!-- 2.7s -->
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
 		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
@@ -3488,6 +3507,7 @@ Mesh files no longer used:
 
 		<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkDeadEye"/> <!-- random DegMax -->
 		<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05"/> <!-- random APM -->
+		<passive_effect name="MagazineSize" operation="base_add" value="-.5,1.6"/> <!-- random MagazineSize -->
 		<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08"/> <!-- random WeaponHandling -->
 
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="6"/>
@@ -3545,6 +3565,7 @@ Mesh files no longer used:
 		<property name="Delay" value=".150"/> <!-- obsolete if rounds per minute exists -->
 		<property name="Magazine_items" value="ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP"/>
 		<property name="Sound_start" value="ak47_fire"/>
+		<property name="Sound_loop" value="ak47_fire"/>
 		<property name="Sound_empty" value="dryfire"/>
 		<property name="Sound_reload" value="ak47_reload"/>
 		<property name="Sound_end" value="ak47_fire_end"/>
@@ -3601,7 +3622,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 	</effect_group>
 </item>
 
@@ -3691,7 +3712,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 	</effect_group>
 </item>
 
@@ -3723,6 +3744,7 @@ Mesh files no longer used:
 		<property name="Delay" value=".150"/> <!-- obsolete if rounds per minute exists -->
 		<property name="Magazine_items" value="ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP"/>
 		<property name="Sound_start" value="m60_fire"/>
+		<property name="Sound_loop" value="m60_fire"/>
 		<property name="Sound_empty" value="dryfire"/>
 		<property name="Sound_reload" value="m60_reload"/>
 		<property name="Sound_end" value="m60_fire_end"/>
@@ -3784,7 +3806,7 @@ Mesh files no longer used:
 
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 	</effect_group>
 </item>
 
@@ -3855,7 +3877,7 @@ Mesh files no longer used:
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".7"/> <!-- 2.7s -->
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="7"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="7"/>
@@ -3969,7 +3991,7 @@ Mesh files no longer used:
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkArchery"/>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 	</effect_group>
 </item>
 
@@ -4068,7 +4090,7 @@ Mesh files no longer used:
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkArchery"/>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 	</effect_group>
 </item>
 
@@ -4154,7 +4176,7 @@ Mesh files no longer used:
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkArchery"/>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 	</effect_group>
 </item>
 
@@ -4236,7 +4258,7 @@ Mesh files no longer used:
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkArchery"/>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 	</effect_group>
 </item>
 
@@ -4318,7 +4340,7 @@ Mesh files no longer used:
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkArchery"/>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 	</effect_group>
 </item>
 
@@ -4420,7 +4442,7 @@ Mesh files no longer used:
 		<passive_effect name="DegradationPerUse" operation="base_set" value="0.35" tags="perkTurrets"/>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 	</effect_group>
 </item>
 
@@ -5885,7 +5907,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mwood"/>
 	<property name="IsSticky" value="true"/>
-	<property name="StickyOffset" value=".325"/>
+	<property name="StickyOffset" value=".1"/>
 	<property name="StickyColliderUp" value="2"/>
 	<property name="StickyColliderRadius" value=".05"/>
 	<property name="StickyColliderLength" value=".75"/>
@@ -5948,7 +5970,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mmetal"/>
 	<property name="IsSticky" value="true"/>
-	<property name="StickyOffset" value=".325"/>
+	<property name="StickyOffset" value=".1"/>
 	<property name="StickyColliderUp" value="2"/>
 	<property name="StickyColliderRadius" value=".05"/>
 	<property name="StickyColliderLength" value=".75"/>
@@ -6008,7 +6030,7 @@ Mesh files no longer used:
 	<property name="UnlockedBy" value="perkRangersAPAmmo"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="IsSticky" value="true"/>
-	<property name="StickyOffset" value=".325"/>
+	<property name="StickyOffset" value=".1"/>
 	<property name="StickyColliderUp" value="2"/>
 	<property name="StickyColliderRadius" value=".05"/>
 	<property name="StickyColliderLength" value=".75"/>
@@ -6431,12 +6453,21 @@ Mesh files no longer used:
 	</property>
 </item>
 
-<item name="resourceIronFragmentBundle">
+<item name="resourceIronFragmentBundle"><!-- deprecated -->
 	<property name="Extends" value="resourceRockSmallBundle"/>
 	<property name="CustomIcon" value="resourceIronFragment"/>
 	<property class="Action0">
 		<property name="Create_item" value="resourceIronFragment"/>
 		<property name="Create_item_count" value="1200"/>
+	</property>
+</item>
+
+<item name="resourceScrapIronBundle">
+	<property name="Extends" value="resourceRockSmallBundle"/>
+	<property name="CustomIcon" value="resourceScrapIron"/>
+	<property class="Action0">
+		<property name="Create_item" value="resourceScrapIron"/>
+		<property name="Create_item_count" value="6000"/>
 	</property>
 </item>
 
@@ -6892,33 +6923,9 @@ add knockdown resist to armor
 	<property name="Stacknumber" value="50"/>
 </item>
 
-<item name="gunTacticalARParts"><!-- deprecated -->
-	<property name="Extends" value="gunAk47Parts"/>
-	<property name="CreativeMode" value="Test"/>
-	<property name="CustomIcon" value="missingIcon"/>
-</item>
-
-<item name="gunM60Parts"><!-- deprecated -->
-	<property name="Extends" value="gunAk47Parts"/>
-	<property name="CreativeMode" value="Test"/>
-	<property name="CustomIcon" value="missingIcon"/>
-</item>
-
 <item name="gunPistolParts">
 	<property name="Extends" value="gunAk47Parts"/>
 	<property name="Material" value="MHandGunParts"/>
-</item>
-
-<item name="gun44MagnumParts"><!-- deprecated -->
-	<property name="Extends" value="gunPistolParts"/>
-	<property name="CreativeMode" value="Test"/>
-	<property name="CustomIcon" value="missingIcon"/>
-</item>
-
-<item name="gunSMG5Parts"><!-- deprecated -->
-	<property name="Extends" value="gunPistolParts"/>
-	<property name="CreativeMode" value="Test"/>
-	<property name="CustomIcon" value="missingIcon"/>
 </item>
 
 <item name="gunHuntingRifleParts">
@@ -6926,44 +6933,14 @@ add knockdown resist to armor
 	<property name="Material" value="MRifleParts"/>
 </item>
 
-<item name="gunMR10Parts"><!-- deprecated -->
-	<property name="Extends" value="gunHuntingRifleParts"/>
-	<property name="CreativeMode" value="Test"/>
-	<property name="CustomIcon" value="missingIcon"/>
-</item>
-
 <item name="gunDoubleBarrelShotgunParts">
 	<property name="Extends" value="gunAk47Parts"/>
 	<property name="Material" value="MShotgunParts"/>
 </item>
 
-<item name="gunPumpShotgunParts"><!-- deprecated -->
-	<property name="Extends" value="gunDoubleBarrelShotgunParts"/>
-	<property name="CreativeMode" value="Test"/>
-	<property name="CustomIcon" value="missingIcon"/>
-</item>
-
 <item name="gunBowWoodenParts">
 	<property name="Extends" value="gunAk47Parts"/>
 	<property name="Material" value="MBowCrossbowParts"/>
-</item>
-
-<item name="gunBowCompoundParts"><!-- deprecated -->
-	<property name="Extends" value="gunBowWoodenParts"/>
-	<property name="CreativeMode" value="Test"/>
-	<property name="CustomIcon" value="missingIcon"/>
-</item>
-
-<item name="gunCrossbowIronParts"><!-- deprecated -->
-	<property name="Extends" value="gunBowWoodenParts"/>
-	<property name="CreativeMode" value="Test"/>
-	<property name="CustomIcon" value="missingIcon"/>
-</item>
-
-<item name="gunCrossbowCompoundParts"><!-- deprecated -->
-	<property name="Extends" value="gunBowWoodenParts"/>
-	<property name="CreativeMode" value="Test"/>
-	<property name="CustomIcon" value="missingIcon"/>
 </item>
 
 <item name="gunRocketLauncherParts">
@@ -7036,12 +7013,6 @@ add knockdown resist to armor
 	<property name="EconomicValue" value="200"/>
 </item>
 
-<item name="meleeToolAugerParts"><!-- deprecated -->
-	<property name="Extends" value="meleeToolChainsawParts"/>
-	<property name="CreativeMode" value="Test"/>
-	<property name="CustomIcon" value="missingIcon"/>
-</item>
-
 <item name="vehicleWheels">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="vehiclePartsGroupDesc"/>
@@ -7082,6 +7053,7 @@ add knockdown resist to armor
 	</property>
 	<effect_group name="vehicleMinibikePlaceable" tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="3000"/>
 	</effect_group>
 </item>
@@ -7109,6 +7081,7 @@ add knockdown resist to armor
 	</property>
 	<effect_group name="vehicleBicyclePlaceable" tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="1500"/>
 	</effect_group>
 </item>
@@ -7135,6 +7108,7 @@ add knockdown resist to armor
 	</property>
 	<effect_group name="vehicleMotorcyclePlaceable" tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="6000"/>
 	</effect_group>
 </item>
@@ -7161,6 +7135,7 @@ add knockdown resist to armor
 	</property>
 	<effect_group name="vehicle4x4TruckPlaceable" tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 	</effect_group>
 </item>
@@ -7187,6 +7162,7 @@ add knockdown resist to armor
 	</property>
 	<effect_group name="vehicleGyrocopterPlaceable" tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="3000"/>
 	</effect_group>
 </item>
@@ -7234,6 +7210,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Head"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.8"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="150,300" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
@@ -7260,6 +7237,7 @@ add knockdown resist to armor
 		<passive_effect name="HypothermalResist" operation="base_add" value="21.5,25.5"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="1.5,2.5"/>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="6.6,9"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="225,450" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
@@ -7282,6 +7260,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Chest"/>
 		<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.8"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="150,300" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
@@ -7302,6 +7281,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Hands"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.8"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="150,300" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
@@ -7322,6 +7302,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Legs"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.8"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="150,300" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
@@ -7342,6 +7323,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Feet"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.8"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="150,300" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
@@ -7381,6 +7363,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Head"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="8.1,11"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="225,450" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
@@ -7407,6 +7390,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Chest"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="8.1,11"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="225,450" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
@@ -7433,6 +7417,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Hands"/>
 		<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="8.1,11"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="225,450" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
@@ -7459,6 +7444,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Legs"/>
 		<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="8.1,11"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="225,450" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
@@ -7485,6 +7471,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Feet"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="8.1,11"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="225,450" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
@@ -7531,6 +7518,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Head"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="9.6,13"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="600,1000" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
@@ -7557,6 +7545,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Chest"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="9.6,13"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="600,1000" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
@@ -7582,6 +7571,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Hands"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="9.6,13"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="600,1000" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
@@ -7607,6 +7597,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Legs"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="9.6,13"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="600,1000" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
@@ -7632,6 +7623,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Feet"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="9.6,13"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="600,1000" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
@@ -7658,6 +7650,7 @@ add knockdown resist to armor
 	<property name="DisplayType" value="armorLightStealth"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="9.6,13"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="600,1000" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
@@ -7690,6 +7683,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Head"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="10.4"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="-1" tags="head,heat,electrical"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="350,700" tier="1,6"/>
@@ -7725,6 +7719,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Chest"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="10.4"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="-1" tags="upperbody,heat,electrical"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="350,700" tier="1,6"/>
@@ -7751,6 +7746,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Hands"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="10.4"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="-1" tags="upperbody,heat,electrical"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="350,700" tier="1,6"/>
@@ -7777,6 +7773,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Legs"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="10.4"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="-1" tags="lowerbody,heat,electrical"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="350,700" tier="1,6"/>
@@ -7803,6 +7800,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Feet"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="10.4"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="-1" tags="lowerbody,heat,electrical"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="350,700" tier="1,6"/>
@@ -7848,6 +7846,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Head"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="5" tags="toxic"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="10.3,14"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="-1" tags="head,heat,electrical"/>
@@ -7883,6 +7882,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Chest"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="10.3,14"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="-1" tags="upperbody,heat,electrical"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="400,800" tier="1,6"/>
@@ -7909,6 +7909,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Hands"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="10.3,14"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="-1" tags="upperbody,heat,electrical"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="400,800" tier="1,6"/>
@@ -7935,6 +7936,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Legs"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="10.3,14"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="-1" tags="lowerbody,heat,electrical"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="400,800" tier="1,6"/>
@@ -7961,6 +7963,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Feet"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="10.3,14"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="-1" tags="lowerbody,heat,electrical"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="400,800" tier="1,6"/>
@@ -8006,6 +8009,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Head"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="11.8,16"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="-1" tags="head,heat,electrical"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="500,1000" tier="1,6"/>
@@ -8040,6 +8044,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Chest"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="11.8,16"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="-1" tags="upperbody,heat,electrical"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="500,1000" tier="1,6"/>
@@ -8067,6 +8072,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Hands"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="11.8,16"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="-1" tags="upperbody,heat,electrical"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="500,1000" tier="1,6"/>
@@ -8094,6 +8100,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Legs"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="11.8,16"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="-1" tags="lowerbody,heat,electrical"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="500,1000" tier="1,6"/>
@@ -8120,6 +8127,7 @@ add knockdown resist to armor
 	<property name="EquipSlot" value="Feet"/>
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="11.8,16"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="-1" tags="lowerbody,heat,electrical"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="500,1000" tier="1,6"/>
@@ -8163,6 +8171,7 @@ add knockdown resist to armor
 	<property name="LightValue" value=".7"/>
 	<effect_group name="leather w scrap AR">
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="8.8,12"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
@@ -8219,6 +8228,7 @@ add knockdown resist to armor
 	<property name="LightValue" value=".7"/>
 	<effect_group name="iron">
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="11.3,14"/>
 		<passive_effect name="HealthLoss" operation="perc_add" value="-0.05">
 			<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacEquipment" operation="Equals" value="1"/>
@@ -8262,6 +8272,7 @@ add knockdown resist to armor
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<effect_group name="steel">
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="11.8,16"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="-1" tags="head,heat,electrical"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="500,1000" tier="1,6"/>
@@ -8303,6 +8314,7 @@ add knockdown resist to armor
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<effect_group name="leather w scrap AR">
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="8.8,12"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
@@ -8330,6 +8342,7 @@ add knockdown resist to armor
 	<property name="CustomIcon" value="armorFootballHelmet"/> <property name="CustomIconTint" value="107,12,12"/>
 	<effect_group name="military">
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="9.6,13"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="300,700" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
@@ -8538,6 +8551,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="1"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="1,3.5"/>
 		<passive_effect name="LightMultiplier" operation="perc_add" value="-.07"><requirement name="!IsIndoors"/></passive_effect>
@@ -8565,6 +8579,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="1"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="1,5"/>
 		<passive_effect name="LightMultiplier" operation="perc_add" value="-.07"><requirement name="!IsIndoors"/></passive_effect>
@@ -8622,6 +8637,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="6.5,9.5"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="1"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="5" tags="lowerbody,legs,radiation,toxic" match_all_tags="true"/>
@@ -8642,6 +8658,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="6.5,9.5"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="1"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="5" tags="upperbody,chest,radiation,toxic" match_all_tags="true"/>
@@ -9103,6 +9120,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="4.8,7.2"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="3.5,4.5"/>
 	</effect_group>
@@ -9123,6 +9141,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="1.8,4.2"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="7.5,10.5"/>
 	</effect_group>
@@ -9140,6 +9159,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="6.5,9.5"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="6.8,9.2"/>
 	</effect_group>
@@ -9154,6 +9174,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="4.8,7.2"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="3.5,4.5"/>
 	</effect_group>
@@ -9172,6 +9193,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="2"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="7.5,10.5"/>
 	</effect_group>
@@ -9195,6 +9217,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="6.5,9.5"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="6.8,9.2"/>
 	</effect_group>
@@ -9345,6 +9368,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="4.8,7.2"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="3.5,4.5"/>
 	</effect_group>
@@ -9361,6 +9385,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="6.5,9.5"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="6.8,9.2"/>
 	</effect_group>
@@ -9393,6 +9418,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="7.2,10.8"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="1.5,2.5"/>
 	</effect_group>
@@ -9409,6 +9435,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="4.8,7.2"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="1.5,2.5"/>
 	</effect_group>
@@ -9443,6 +9470,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="1.8,4.2"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="7.5,10.5"/>
 	</effect_group>
@@ -9458,6 +9486,7 @@ perkNightStalkerSilentNight
 	<property name="DescriptionKey" value="apparelTShirtZUDesc"/>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="1.8,4.2"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="7.5,10.5"/>
 	</effect_group>
@@ -9491,6 +9520,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="1.8,4.2"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="7.5,10.5"/>
 	</effect_group>
@@ -9524,6 +9554,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="11.7,15.5"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="1.5,2.5"/>
 	</effect_group>
@@ -9552,6 +9583,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="2.8,5.2"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="10.5,14.3"/>
 	</effect_group>
@@ -9584,6 +9616,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="13.5,17.5"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="17.5,22.5"/>
 	</effect_group>
@@ -9616,6 +9649,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="21.5,26.5"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="1.5,2.5"/>
 	</effect_group>
@@ -9647,6 +9681,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="11.7,15.5"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="1.5,2.5"/>
 	</effect_group>
@@ -9671,6 +9706,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="11.7,15.5"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="1.5,2.5"/>
 		<passive_effect name="RunSpeed" operation="perc_add" value=".1"/><display_value name="dRunSpeed" value=".1"/>
@@ -9682,6 +9718,7 @@ perkNightStalkerSilentNight
 
 <item name="apparelSuitPants">
 	<property name="Tags" value="lowerbody,legs,clothing,pocketMod,canHaveCosmetic"/>
+	<property name="DescriptionKey" value="apparelSuitGroupDesc"/>
 	<property name="DisplayType" value="clothing"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="CustomIconTint" value="57,57,57"/>
@@ -9706,6 +9743,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="4.8,7.2"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="3.5,4.5"/>
 		<passive_effect name="HealthLoss" operation="perc_add" value="-.025">
@@ -9716,6 +9754,7 @@ perkNightStalkerSilentNight
 
 <item name="apparelSuitJacket">
 	<property name="Extends" value="apparelCoatJacketGeneric"/>
+	<property name="DescriptionKey" value="apparelSuitGroupDesc"/>
 	<property name="CustomIconTint" value="57,57,57"/>
 	<property class="UMA">
 		<property name="Mesh" value="clothes_suit_jacket"/>
@@ -9729,6 +9768,7 @@ perkNightStalkerSilentNight
 	<property name="EconomicValue" value="499"/>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="11.7,15.5"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="1.5,2.5"/>
 		<passive_effect name="HealthLoss" operation="perc_add" value="-.025">
@@ -9742,7 +9782,7 @@ perkNightStalkerSilentNight
 	<property name="Tags" value="lowerbody,feet,clothing,canHaveCosmetic"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="DisplayType" value="clothing"/>
-	<property name="DescriptionKey" value="apparelClothGroupDesc"/>
+	<property name="DescriptionKey" value="apparelSuitGroupDesc"/>
 	<property name="UnlockedBy" value="perkNeedleAndThreadFootwear"/>
 	<property name="CustomIconTint" value="57,57,57"/>
 	<property name="Weight" value="25"/>
@@ -9852,7 +9892,6 @@ perkNightStalkerSilentNight
 	<property name="EconomicValue" value="5"/>
 	<property name="Group" value="Science,Medical,Basics"/>
 	<property name="DescriptionKey" value="medicalBandageDesc"/>
-	<property name="PickupJournalEntry" value="firstAidTip"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -10263,44 +10302,16 @@ perkNightStalkerSilentNight
 
 </item>
 
-<item name="medicalBloodDrawKit">
-	<property name="Tags" value="medical"/>
+<item name="medicalBloodDrawKit"><!-- deprecated -->
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="missingIcon"/>
+	<property name="DescriptionKey" value="deprecatedBlockDesc"/>
 	<property name="HoldType" value="3"/>
 	<property name="Meshfile" value="#Other/Items?Food/emptyJarPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mplastics"/>
 	<property name="Weight" value="6"/>
-	<property name="EconomicValue" value="149"/>
 	<property name="Stacknumber" value="1"/> <!-- STK loot -->
-	<property name="UnlockedBy" value="perkYeahScience,medicalBloodDrawKitSchematic"/>
-	<property name="Group" value="Science,Medical"/>
-	<property class="Action0">
-		<property name="Class" value="Eat"/>
-		<property name="Delay" value="1.0"/>
-		<property name="Use_time" value="..."/>
-		<property name="Sound_start" value="player_blooddraw"/>
-		<property name="Consume" value="false"/>
-		<property name="Create_item" value="medicalBloodBag"/>
-	</property>
-
-	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$BloodDrawKitCounter" operation="add" value="22.85"><!-- 8 minutes -->
-			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="LT" value="3"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$BloodDrawKitCounter" operation="add" value="18.28"><!-- 80% -->
-			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="3"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$BloodDrawKitCounter" operation="add" value="13.71"><!-- 60% -->
-			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="4"/>
-		</triggered_effect>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$BloodDrawKitCounter" operation="add" value="9.14"><!-- 40% -->
-			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="5"/>
-		</triggered_effect>
-
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffBloodDrawKitMain"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-4"/>
-		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-	</effect_group>
 </item>
 
 <item name="medicalBloodBag">
@@ -10309,7 +10320,7 @@ perkNightStalkerSilentNight
 	<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="5"/> <!-- STK resource -->
+	<property name="Stacknumber" value="15"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -10668,34 +10679,6 @@ perkNightStalkerSilentNight
 	</effect_group>
 </item>
 
-<item name="foodCanMysteriousMeat">
-	<property name="Tags" value="food"/>
-	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="food"/>
-	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
-	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="Material" value="Mmetal"/>
-	<property name="Weight" value="5"/>
-	<property name="EconomicValue" value="60"/>
-	<property name="Stacknumber" value="10"/> <!-- STK food -->
-	<property class="Action0">
-		<property name="Class" value="Eat"/>
-		<property name="Delay" value="1.0"/>
-		<property name="Use_time" value="..."/>
-		<property name="Sound_start" value="player_eating"/>
-		<property name="Create_item" value="drinkCanEmpty"/>
-	</property>
-	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
-	<property name="CustomIcon" value="foodCanBeef"/>
-	<property name="CustomIconTint" value="a0a0a0"/>
-	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="25"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="30"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-	</effect_group>
-</item>
-
 <item name="foodCanCatfood">
 	<property name="Extends" value="foodCanBeef"/>
 	<property name="EconomicValue" value="20"/>
@@ -10945,31 +10928,6 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffIllFoodPoisoning01">
 			<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
 		</triggered_effect>
-	</effect_group>
-</item>
-
-<item name="foodDeathMeat">
-	<property name="Tags" value="food"/>
-	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="foodWaterNegative"/>
-	<property name="CustomIcon" value="foodCharredMeat"/>
-	<property name="CustomIconTint" value="604888"/>
-	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
-	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="10"/> <!-- STK food -->
-	<property name="EconomicValue" value="20"/>
-	<property class="Action0">
-		<property name="Class" value="Eat"/>
-		<property name="Delay" value="2.1"/>
-		<property name="Use_time" value="..."/>
-		<property name="Sound_start" value="player_eating"/>
-	</property>
-	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
-
-	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="-1000"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInternalBleeding"/>
 	</effect_group>
 </item>
 
@@ -13122,15 +13080,16 @@ perkNightStalkerSilentNight
 	</effect_group>
 </item>
 
-<item name="medicalBloodDrawKitSchematic">
-	<property name="Extends" value="schematicNoQualityMaster"/>
-	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="medicalBloodDrawKit"/>
-	<property name="Unlocks" value="medicalBloodDrawKit"/>
-	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalBloodDrawKit" operation="set" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-	</effect_group>
+<item name="medicalBloodDrawKitSchematic"><!-- deprecated -->
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="missingIcon"/>
+	<property name="DescriptionKey" value="deprecatedBlockDesc"/>
+	<property name="HoldType" value="3"/>
+	<property name="Meshfile" value="#Other/Items?Food/emptyJarPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mpaper"/>
+	<property name="Weight" value="5"/>
+	<property name="Stacknumber" value="5"/>
 </item>
 
 <item name="toolBellowsSchematic">
@@ -15120,13 +15079,13 @@ perkNightStalkerSilentNight
 	</effect_group>
 </item>
 
-<item name="resourceIronFragment">
+<item name="resourceIronFragment"><!-- deprecated -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="Material" value="MresourceIronFragment"/>
+	<property name="Material" value="MresourceScrapIron"/>
 	<property name="Weight" value="5"/>
-	<property name="Stacknumber" value="1200"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1200"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="5"/>
@@ -15223,8 +15182,8 @@ perkNightStalkerSilentNight
 	<property name="Material" value="MresourceOilShale"/>
 	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
 	<property name="FuelValue" value="5"/>
-	<property name="EconomicValue" value="5"/>
-	<property name="EconomicBundleSize" value="50"/>
+	<property name="EconomicValue" value="10"/>
+	<property name="EconomicBundleSize" value="10"/>
 	<property name="Group" value="Resources"/>
 	<property name="CraftingIngredientExp" value="2"/>
 </item>
@@ -15422,7 +15381,7 @@ perkNightStalkerSilentNight
 	<property name="Material" value="MresourceScrapLeadSmall"/>
 	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
 	<property name="Weight" value="1"/>
-	<property name="EconomicValue" value="20"/>
+	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="10"/>
 	<property name="Group" value="Resources"/>
 </item>
@@ -16512,7 +16471,6 @@ perkNightStalkerSilentNight
 	<property class="Action0">
 		<property name="Class" value="Ranged"/>
 		<property name="Magazine_items" value="ammo9mmBulletBall"/>
-		<property name="Sound_start" value=""/>
 		<property name="Sound_start" value="mp5_s_fire"/>
 		<property name="Sound_repeat" value=""/>
 		<property name="Sound_end" value=""/>
@@ -16661,19 +16619,16 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="apparelShades"/>
 	<property name="CreativeMode" value="Dev"/>
 	<property name="CustomIcon" value="apparelShades"/> <property name="CustomIconTint" value="210,0,210"/>
+	<property name="DisplayType" value="clothingAviatorGoggles"/>
 	<property name="ItemTypeIcon" value="computer"/>
 	<property name="Tags" value="head,clothing"/>
 	<property name="UMA.Overlay0Tint" value="255,0,255"/>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="LootGamestage" operation="base_add" value="1500"/>
+		<passive_effect name="TreasureRadius" operation="base_add" value="-5"/>
+		<display_value name="dTreasureRadius" value="-5"/>
 	</effect_group>
-</item>
-
-<item name="jetPackAdmin">
-	<property name="Extends" value="armorLeatherChest"/>
-	<property name="CreativeMode" value="None"/>
-	<property name="CustomIcon" value="apparelShades"/>
 </item>
 
 <item name="pimpMiningHelmetAdmin">

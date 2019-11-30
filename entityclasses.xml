@@ -205,7 +205,7 @@
 		-->
 		<passive_effect name="PlayerExpGain" operation="perc_add" value="5" tags="Upgrading"/>
 
-		<passive_effect name="ExpDeficitPerDeathPercentage" operation="base_set" value=".1"/>
+		<passive_effect name="ExpDeficitPerDeathPercentage" operation="base_set" value=".25"/>
 		<passive_effect name="ExpDeficitMaxPercentage" operation="base_set" value=".5"/>
 
 		<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="buffStatusCheck01,buffStatusCheck02"/>
@@ -371,8 +371,8 @@
 	<!-- <property name="Buffs" value="zombieRadiatedBuff80"/> -->
 	<property name="Immunity" value="sickness;disease;wellness"/> <!-- bleeding; -->
 
-	<property name="ExperienceGain" value="8260"/> <!-- XP grunt -->
-	<property name="LootDropProb" value="0.40"/> <!-- Whether it drops a loot bag on death or not. -->
+	<property name="ExperienceGain" value="413"/> <!-- XP grunt -->
+	<property name="LootDropProb" value="0.02"/> <!-- Whether it drops a loot bag on death or not. -->
 	<!-- <property name="LootListOnDeath" value="45"/> -->
 	<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
 
@@ -2358,7 +2358,7 @@
 </entity_class>
 
 <entity_class name="animalStag" extends="animalTemplateTimid">
-	<property name="Tags" value="entity,animal,deer,perkAT2,perkAT3,perkAT4,perkAT5"/>
+	<property name="Tags" value="entity,animal,deer,perkAT02,perkAT03,perkAT04,perkAT05"/>
 	<property name="MapIcon" value="ui_game_symbol_tracking_deer"/>
 	<property name="TrackerIcon" value="ui_game_symbol_tracking_deer"/>
 	<property name="AvatarController" value="AvatarAnimalController"/>
@@ -2423,7 +2423,7 @@
 </entity_class>
 
 <entity_class name="animalRabbit" extends="animalTemplateTimid">
-	<property name="Tags" value="entity,animal,rabbit,perkAT1,perkAT2,perkAT3,perkAT4,perkAT5"/>
+	<property name="Tags" value="entity,animal,rabbit,perkAT01,perkAT02,perkAT03,perkAT04,perkAT05"/>
 	<property name="MapIcon" value="ui_game_symbol_tracking_rabbit"/>
 	<property name="TrackerIcon" value="ui_game_symbol_tracking_rabbit"/>
 	<property name="Class" value="EntityAnimalRabbit"/>
@@ -2466,7 +2466,7 @@
 </entity_class>
 
 <entity_class name="animalChicken" extends="animalTemplateTimid">
-	<property name="Tags" value="entity,animal,chicken,perkAT1,perkAT2,perkAT3,perkAT4,perkAT5"/>
+	<property name="Tags" value="entity,animal,chicken,perkAT01,perkAT02,perkAT03,perkAT04,perkAT05"/>
 	<property name="MapIcon" value="ui_game_symbol_tracking_chicken"/>
 	<property name="TrackerIcon" value="ui_game_symbol_tracking_chicken"/>
 	<property name="Mesh" value="Animals/CHICKEN/chickenPrefab"/>
@@ -2598,7 +2598,7 @@
 </entity_class>
 
 <entity_class name="animalBear" extends="animalTemplateHostile">
-	<property name="Tags" value="entity,animal,hostile,bear,perkAT5"/>
+	<property name="Tags" value="entity,animal,hostile,bear,perkAT05"/>
 	<property name="MapIcon" value="ui_game_symbol_tracking_bear"/>
 	<property name="TrackerIcon" value="ui_game_symbol_tracking_bear"/>
 	<property name="AvatarController" value="AvatarAnimalController"/>
@@ -2698,7 +2698,7 @@
 </entity_class>
 
 <entity_class name="animalWolf" extends="animalTemplateHostile">
-	<property name="Tags" value="entity,animal,hostile,wolf,perkAT4,perkAT5"/>
+	<property name="Tags" value="entity,animal,hostile,wolf,perkAT04,perkAT05"/>
 	<property name="MapIcon" value="ui_game_symbol_tracking_wolf"/>
 	<property name="TrackerIcon" value="ui_game_symbol_tracking_wolf"/>
 	<!--property name="Prefab" value="Wolf"-->
@@ -2758,7 +2758,7 @@
 </entity_class>
 
 <entity_class name="animalCoyote" extends="animalWolf">
-	<property name="Tags" value="entity,animal,hostile,coyote,perkAT4,perkAT5"/>
+	<property name="Tags" value="entity,animal,hostile,coyote,perkAT04,perkAT05"/>
 	<property name="MapIcon" value="ui_game_symbol_tracking_wolf"/>
 	<property name="TrackerIcon" value="ui_game_symbol_tracking_wolf"/>
 	<property name="PhysicsBody" value="wolf"/>
@@ -2849,7 +2849,7 @@
 </entity_class>
 
 <entity_class name="animalMountainLion" extends="animalDireWolf">
-	<property name="Tags" value="entity,animal,hostile,mountainlion,perkAT5"/>
+	<property name="Tags" value="entity,animal,hostile,mountainlion,perkAT05"/>
 	<property name="MapIcon" value="ui_game_symbol_tracking_mountain_lion"/>
 	<property name="TrackerIcon" value="ui_game_symbol_tracking_mountain_lion"/>
 	<property name="PhysicsBody" value="MountainLion"/>
@@ -3037,7 +3037,7 @@
 </entity_class>
 
 <entity_class name="animalSnake" extends="animalTemplateHostile">
-	<property name="Tags" value="entity,animal,hostile,snake,perkAT1,perkAT2,perkAT3,perkAT4,perkAT5"/>
+	<property name="Tags" value="entity,animal,hostile,snake,perkAT01,perkAT02,perkAT03,perkAT04,perkAT05"/>
 	<property name="MapIcon" value="ui_game_symbol_tracking_snake"/>
 	<property name="TrackerIcon" value="ui_game_symbol_tracking_snake"/>
 	<property name="EntityType" value="Animal"/>
@@ -3105,7 +3105,7 @@
 </entity_class>
 
 <entity_class name="animalBoar" extends="animalTemplateHostile">
-	<property name="Tags" value="entity,animal,hostile,boar,perkAT3,perkAT4,perkAT5"/>
+	<property name="Tags" value="entity,animal,hostile,boar,perkAT03,perkAT04,perkAT05"/>
 	<property name="MapIcon" value="ui_game_symbol_tracking_pig"/>
 	<property name="TrackerIcon" value="ui_game_symbol_tracking_pig"/>
 	<property name="IsEnemyEntity" value="false"/><!-- override hostile template setting so he can spawn in safe zones -->
@@ -3151,7 +3151,7 @@
 </entity_class>
 
 <entity_class name="animalBossGrace" extends="animalBoar">
-	<property name="Tags" value="entity,animal,hostile,boar,perkAT5,boss"/>
+	<property name="Tags" value="entity,animal,hostile,boar,perkAT05,boss"/>
 	<property name="IsEnemyEntity" value="true"/>
 	<property name="ReplaceMaterial0" value="Entities/Animals/Boar/Materials/GRACE"/>
 	<property name="ReplaceMaterial1" value="Entities/Animals/Boar/Materials/GRACE"/>

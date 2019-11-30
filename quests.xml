@@ -1562,12 +1562,12 @@
 		<reward type="Exp" value="15000"/>
 		<reward type="Item" id="casinoCoin" value="4080"/>
 
-		<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" isfixed="true" value="6"/>
-		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="6"/>
-		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="6"/>
+		<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" isfixed="true" value="7"/>
+		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="7"/>
+		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="7"/>
+		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="7"/>
+		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="7"/>
+		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="7"/>
 	</quest>
 
 	<quest id="tier6_clear">
@@ -1855,12 +1855,12 @@
 		<reward type="Exp" value="16900"/>
 		<reward type="Item" id="casinoCoin" value="4600"/>
 
-		<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" isfixed="true" value="6"/>
-		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="6"/>
-		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="6"/>
+		<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" isfixed="true" value="7"/>
+		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="7"/>
+		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="7"/>
+		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="7"/>
+		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="7"/>
+		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="7"/>
 	</quest>
 
 	<quest id="tier6_fetch_clear">
