@@ -222,6 +222,7 @@ New items:
 		<loot level="4" prob="0.5"/>
 		<loot level="5" prob="0.1"/>
 		<loot level="6" prob="0.0"/>
+		<loot level="7" prob="0.0"/>
 		<loot level="11" prob="2.0"/>
 		<loot level="12" prob="1.0"/>
 		<loot level="13" prob="0.5"/>
@@ -237,6 +238,7 @@ New items:
 		<loot level="4" prob="2.0"/>
 		<loot level="5" prob="1.0"/>
 		<loot level="6" prob="0.5"/>
+		<loot level="7" prob="0.5"/>
 		<loot level="11" prob="1.0"/>
 		<loot level="12" prob="2.0"/>
 		<loot level="13" prob="2.0"/>
@@ -252,6 +254,7 @@ New items:
 		<loot level="4" prob="1.0"/>
 		<loot level="5" prob="2.0"/>
 		<loot level="6" prob="2.0"/>
+		<loot level="7" prob="2.0"/>
 		<loot level="11" prob="0.0"/>
 		<loot level="12" prob="0.0"/>
 		<loot level="13" prob="0.1"/>
@@ -804,46 +807,6 @@ The overall plan for loot distribution:
 </lootqualitytemplates>
 
 <lootqualitytemplates>
-	<lootqualitytemplate name="questTierRigidTemplate">
-		<qualitytemplate level="1" default_quality="1">
-			<loot quality="1" prob="1"/>
-		</qualitytemplate>
-		<qualitytemplate level="2" default_quality="2">
-			<loot quality="2" prob="1"/>
-		</qualitytemplate>
-		<qualitytemplate level="3" default_quality="3">
-			<loot quality="3" prob="1"/>
-		</qualitytemplate>
-		<qualitytemplate level="4" default_quality="4">
-			<loot quality="4" prob="1"/>
-		</qualitytemplate>
-		<qualitytemplate level="5" default_quality="5">
-			<loot quality="5" prob="1"/>
-		</qualitytemplate>
-		<qualitytemplate level="6" default_quality="6">
-			<loot quality="6" prob="1"/>
-		</qualitytemplate>
-
-		<qualitytemplate level="11" default_quality="1">
-			<loot quality="1" prob="1"/>
-		</qualitytemplate>
-		<qualitytemplate level="12" default_quality="2">
-			<loot quality="2" prob="1"/>
-		</qualitytemplate>
-		<qualitytemplate level="13" default_quality="3">
-			<loot quality="3" prob="1"/>
-		</qualitytemplate>
-		<qualitytemplate level="14" default_quality="4">
-			<loot quality="4" prob="1"/>
-		</qualitytemplate>
-		<qualitytemplate level="15" default_quality="5">
-			<loot quality="5" prob="1"/>
-		</qualitytemplate>
-		<qualitytemplate level="16" default_quality="6">
-			<loot quality="6" prob="1"/>
-		</qualitytemplate>
-	</lootqualitytemplate>
-
 	<lootqualitytemplate name="questTierFlexibleTemplate">
 		<qualitytemplate level="1" default_quality="1">
 			<loot quality="1" prob="1"/>
@@ -862,6 +825,9 @@ The overall plan for loot distribution:
 		</qualitytemplate>
 		<qualitytemplate level="6" default_quality="6">
 			<loot quality="5,6" prob="1"/>
+		</qualitytemplate>
+		<qualitytemplate level="7" default_quality="6">
+			<loot quality="6" prob="1"/>
 		</qualitytemplate>
 
 		<qualitytemplate level="11" default_quality="1">
@@ -1875,7 +1841,6 @@ The overall plan for loot distribution:
 	<item name="modFuelTankSmallSchematic"/>
 	<item name="modFuelTankLargeSchematic"/>
 	<item name="medicalFirstAidBandageSchematic"/>
-	<item name="medicalBloodDrawKitSchematic"/>
 	<item name="resourceMilitaryFiberSchematic"/>
 	<item name="modGunMeleeTheHunterSchematic"/>
 	<!--<item name="modGunMeleeBlessedMetalSchematic"/>-->
@@ -2263,7 +2228,7 @@ The overall plan for loot distribution:
 	<item name="resourceBrokenGlass" count="10,20"/>
 	<item name="resourceRockSmall" count="10,20"/>
 	<item name="resourceClayLump" count="10,20"/>
-	<item name="resourceIronFragment" count="10,20" prob="2"/>
+	<item name="resourceScrapIron" count="50,100" prob="2"/>
 	<item name="resourceMetalPipe" count="10,20"/>
 	<item name="resourceForgedIron" count="10,20" prob="2"/>
 	<item name="resourceForgedSteel" count="5,20"/>
@@ -2343,7 +2308,6 @@ The overall plan for loot distribution:
 	<item name="resourceCloth" count="1,4"/>
 	<item group="trophyGroup"/>
 	<item name="resourceCandleStick"/>
-	<item name="glassBlockVariantHelper"/>
 	<item name="resourceGunPowder" count="1,3"/>
 	<item name="resourceDoorKnob"/>
 	<item name="resourceOil" count="2,6"/>
@@ -2488,8 +2452,6 @@ The overall plan for loot distribution:
 	<item name="medicalFirstAidKit"/>
 	<item name="toolBeaker"/>
 	<item name="drugAntibiotics"/>
-	<item name="medicalBloodDrawKit"/>
-	<!--<item name="firstAidKitSchematic"/>-->
 	<item name="drugSteroids"/>
 	<item name="drugRecog"/>
 	<item name="drugFortBites"/>
@@ -2500,7 +2462,7 @@ The overall plan for loot distribution:
 	<item name="medicalFirstAidBandage"/>
 	<item name="medicalBandage"/>
 	<item name="drugSteroids"/>
-	<item name="medicalBloodBag"/>
+	<item name="medicalBloodBag" count="2,4"/>
 	<item name="drugVitamins"/>
 	<item name="drinkJarGrainAlcohol"/>
 	<item name="medicalSplint"/>
@@ -2663,8 +2625,6 @@ The overall plan for loot distribution:
 	<item name="resourceOilShale" count="10,30"/>
 	<item name="drugPainkillers" count="1,2"/>
 	<item name="drugAntibiotics" prob="0.5"/>
-	<item name="medicalBloodDrawKit" prob="0.35"/>
-	<!--<item name="firstAidKitSchematic" prob="0.15"/>-->
 	<item name="toolBeaker" prob="0.35"/>
 	<item name="resourceAcid" count="1,2" prob="0.7"/>
 </lootgroup>
@@ -2995,21 +2955,34 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 </lootgroup>
 
 <lootgroup name="groupQuestAmmo">
-	<item name="ammoShotgunShell" count="9,21" prob="1.0"/>
-	<item name="ammo9mmBulletBall" count="27,63" prob="1.0"/>
-	<item name="ammo762mmBulletBall" count="16,39" prob="1.0"/>
-	<item name="ammo44MagnumBulletBall" count="13,30" loot_prob_template="GradeCLoot"/>
-	<item name="ammoArrowFlaming" count="14,33" prob="1.0"/>
-	<item name="ammoCrossbowBoltFlaming" count="14,33" prob="1.0"/>
-	<item name="ammoArrowExploding" count="4,11" loot_prob_template="GradeCLoot"/>
-	<item name="ammoCrossbowBoltExploding" count="3,8" loot_prob_template="GradeCLoot"/>
-	<item name="thrownAmmoPipeBomb" count="5,8" prob="1.0"/>
-	<item name="thrownDynamite" count="3,5" prob="0.8"/>
-	<item name="thrownAmmoMolotovCocktail" count="5,8" prob="1.0"/>
-	<item name="thrownGrenade" count="5,8" prob=".3"/>
-	<item name="thrownTimedCharge" count="4,6" loot_prob_template="GradeCLoot"/>
-	<item name="ammoShotgunSlug" count="10,25" loot_prob_template="GradeCLoot"/>
-	<item name="ammoRocketFrag" count="2,3" loot_prob_template="GradeCLoot"/>
+	<item name="ammo9mmBulletBall" count="300" loot_prob_template="GradeALoot"/>
+	<item name="ammo9mmBulletHP" count="300" loot_prob_template="GradeBLoot"/>
+	<item name="ammo9mmBulletAP" count="300" loot_prob_template="GradeCLoot"/>
+
+	<item name="ammo44MagnumBulletBall" count="150" loot_prob_template="GradeALoot"/>
+	<item name="ammo44MagnumBulletHP" count="150" loot_prob_template="GradeBLoot"/>
+	<item name="ammo44MagnumBulletAP" count="150" loot_prob_template="GradeCLoot"/>
+
+	<item name="ammoShotgunShell" count="150" loot_prob_template="GradeALoot"/>
+	<item name="ammoShotgunSlug" count="150" loot_prob_template="GradeCLoot"/>
+
+	<item name="ammo762mmBulletBall" count="150" loot_prob_template="GradeALoot"/>
+	<item name="ammo762mmBulletHP" count="150" loot_prob_template="GradeBLoot"/>
+	<item name="ammo762mmBulletAP" count="150" loot_prob_template="GradeCLoot"/>
+
+	<item name="ammoArrowFlaming" count="150" loot_prob_template="GradeBLoot"/>
+	<item name="ammoCrossbowBoltFlaming" count="150" loot_prob_template="GradeBLoot"/>
+	<item name="ammoArrowExploding" count="75" loot_prob_template="GradeCLoot"/>
+	<item name="ammoCrossbowBoltExploding" count="75" loot_prob_template="GradeCLoot"/>
+
+	<item name="ammoRocketFrag" count="20" loot_prob_template="GradeCLoot"/>
+
+	<item name="thrownAmmoPipeBomb" count="20" loot_prob_template="GradeALoot"/>
+	<item name="thrownDynamite" count="10" loot_prob_template="GradeBLoot"/>
+	<item name="thrownAmmoMolotovCocktail" count="20" loot_prob_template="GradeALoot"/>
+	<item name="thrownGrenade" count="25"  loot_prob_template="GradeBLoot"/>
+	<item name="thrownGrenadeContact" count="25" loot_prob_template="GradeCLoot"/>
+	<item name="thrownTimedCharge" count="10" loot_prob_template="GradeCLoot"/>
 </lootgroup>
 
 <lootgroup name="groupQuestArmor" loot_quality_template="questTierFlexibleTemplate">
@@ -3022,15 +2995,14 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 
 <lootgroup name="groupQuestMedical">
 	<item name="drugVitamins" count="2,4" loot_prob_template="GradeALoot"/>
-	<item name="medicalFirstAidBandage" count="8,15" loot_prob_template="GradeALoot"/>
-	<item name="medicalFirstAidKit" count="5,10" prob="1.0"/>
-	<item name="medicalPlasterCast" count="5,10" prob="1.0"/>
-	<item name="drugAntibiotics" count="2,4" prob="1.0"/>
+	<item name="medicalFirstAidBandage" count="4,5" loot_prob_template="GradeALoot"/>
+	<item name="medicalFirstAidKit" count="2,3" prob="1.0"/>
+	<item name="drugAntibiotics" count="1,3" prob="1.0"/>
 	<item name="drugHerbalAntibiotics" count="2,4" loot_prob_template="GradeALoot"/>
-	<item name="drugSteroids" count="2,4" loot_prob_template="GradeCLoot"/>
+	<item name="drugSteroids" count="3,5" loot_prob_template="GradeCLoot"/>
 	<item name="drugRecog" count="2,4" loot_prob_template="GradeCLoot"/>
 	<item name="drugFortBites" count="2,4" loot_prob_template="GradeCLoot"/>
-	<item name="drugPainkillers" count="6,10" loot_prob_template="GradeCLoot"/>
+	<item name="drugPainkillers" count="4,5" loot_prob_template="GradeCLoot"/>
 	<item name="toolBeaker" loot_prob_template="GradeBLoot"/>
 </lootgroup>
 
@@ -3112,7 +3084,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 The simplest way to set up the 11-16 variants (for a start) would be that in such a call
 any iron tools or T1 mods have a 0 probability.
 
-questTierRigidTemplate
+
 questTierFlexibleTemplate
 
 	<item group="groupQuestAmmo" prob="1.0"/>
@@ -3817,17 +3789,17 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 
 <!-- cntCollapsedForge -->
 <lootcontainer id="91" count="1" size="7,4" sound_open="forge_open" sound_close="forge_close" loot_quality_template="qualBaseTemplate">
-	<item group="forgeLoot" prob=".75"/>
+	<item group="forgeLoot"/>
 	<item name="forgeSchematic" prob=".25"/>
 </lootcontainer>
 
 <!-- cntCollapsedWorkbench -->
 <lootcontainer id="92" count="1" size="7,4" sound_open="open_workbench" sound_close="close_workbench" loot_quality_template="qualBaseTemplate">
-	<item group="workbenchLoot" prob=".5"/>
-	<item group="tools" prob=".1"/>
-	<item group="rareTools" prob="0.5"/>
-	<item group="vehicleParts" prob=".1"/>
-	<item name="workbenchSchematic" prob=".25"/>
+	<item group="workbenchLoot"/>
+	<item group="tools" prob=".2"/>
+	<item group="rareTools"/>
+	<item group="vehicleParts" prob=".2"/>
+	<item name="workbenchSchematic" prob=".6"/>
 </lootcontainer>
 
 <!-- cntCollapsedCementMixer -->
@@ -3840,7 +3812,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 <lootcontainer id="94" count="1" size="7,4" sound_open="chem_station_open" sound_close="chem_station_close" loot_quality_template="qualBaseTemplate">
 	<item group="labEquipment" prob="37.5"/>
 	<item group="chemistryStationLoot" prob="37.5"/>
-	<item name="chemistryStationSchematic" prob="25"/>
+	<item name="chemistryStationSchematic" prob="18.7"/>
 </lootcontainer>
 
 <!-- cntLootCrateHero, Hero / Hidden Stash Cardboard Loot-->
@@ -3998,7 +3970,7 @@ treasureTemplate
 </lootcontainer>
 
 <!-- cntSodaFountain -->
-<lootcontainer id="119" count="0,1" size="6,1" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" loot_quality_template="qualBaseTemplate">
+<lootcontainer id="119" count="1,2" size="6,1" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" loot_quality_template="qualBaseTemplate">
 	<!--
 	<item name="drinkCanMegaCrush" prob="0.045"/>
 	<item name="drinkJarBeer" count="1,2"/>
@@ -4008,7 +3980,7 @@ treasureTemplate
 	<item name="drinkJarRedTea" count="1,2"/>
 	<item name="drinkJarYuccaJuice" count="1,2"/>
 	-->
-	<item name="drinkCanMegaCrush" count="1,2" prob="0.1"/>
+	<item name="drinkCanMegaCrush" count="1,2"/>
 	<item name="drinkJarYuccaJuice" count="1,2"/>
 </lootcontainer>
 

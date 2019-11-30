@@ -10,7 +10,7 @@
 <!-- A15: 8000 XP for level 1 and 134k for level 199, total cumulative of 9MXP; XPRequired = exp_to_level * experience_multiplier ^ level -->
 <!-- A16: 8300 XP for level 1, total cumulative of 11MXP -->
 <!-- A17: 11931 XP for level 1, total cumulative of 67MXP -->
-<!-- A18: 10000 XP for level 1, total cumulative of 477538MXP at lvl 300 -->
+<!-- A18: 10000 XP for level 1, total cumulative of 4.78E+11 XP at lvl 300 -->
 </level>
 
 <attributes min_level="1" max_level="10" base_skill_point_cost="1" cost_multiplier_per_level="1.14"> <!--values here are simply base values for any attribute that doesn't override it. -->
@@ -535,8 +535,8 @@
 
 				<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".2,1"/>
 				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".1,.5"/>
-				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1,5" value="0.1,.30"/>
-				<passive_effect name="RoundsPerMinute" operation="perc_add" level="1,5" value="0.15,.35"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1,5" value=".1,.30"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="1,5" value=".1,.5"/>
 
 				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryStunned01">
 					<requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="Equals" value="3"/>
@@ -775,6 +775,7 @@
 		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="10" desc_key="reqStrengthLevel10"/></level_requirements>
 
 		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="0,5" value="0,5" tags="perkMasterChef"/><!-- fake crafting perk that is used to scale resources -->
 			<passive_effect name="CraftingTime" operation="perc_add" level="1,5" value="-.1,-.5" tags="perkMasterChef"/>
 			<passive_effect name="CraftingTime" operation="perc_add" level="1,5" value=".06,.3" tags="perkChefBoiledWater"/>
 
@@ -1675,13 +1676,14 @@
 		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="reqIntellectLevel10"/></level_requirements>
 
 		<effect_group>
-			<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_clay,unit_stone,unit_glass,unit_brass,unit_iron,unit_lead"/>
+			<passive_effect name="CraftingTier" operation="base_set" level="0,5" value="0,5" tags="perkAdvancedEngineering"/><!-- fake crafting perk that is used to scale resources -->
+
 				<!-- Engineer use x% less material on all recipes in the forge... by adding it to non engineers T3 10% .9, T4 15% .85, T5 20% .8 -->
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="forge"/>
-			<passive_effect name="CraftingTime" operation="perc_add" level="1,5" value="-0.2" tags="forgeCrafting"/>
+			<passive_effect name="CraftingTime" operation="perc_add" level="1,5" value="-0.2" tags="perkAdvancedEngineering"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,5" value="1" tags="workbench,tableSaw,cementMixer"/>
 			<passive_effect name="CraftingTime" operation="perc_add" level="2,5" value="-0.2" tags="workbenchCrafting,cementMixerCrafting,tableSawCrafting"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="generatorbank,electricwirerelay,switch,ceilingLight01_player,industrialLight01_player,industrialLight02_player,player_ceilingLight07Prefab,armorMiningHelmet,spotlightPlayer,speaker,pressureplate,pressureplateLong,dartTrap,electrictimerrelay,motionsensor,tripwirepost,electricfencepost,bladeTrap"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="generatorbank,electricwirerelay,switch,ceilingLight01_player,industrialLight01_player,industrialLight02_player,armorMiningHelmet,spotlightPlayer,speaker,pressureplate,pressureplateLong,dartTrap,electrictimerrelay,motionsensor,tripwirepost,electricfencepost,bladeTrap"/>
 			<passive_effect name="ElectricalTrapXP" operation="base_set" level="3,4,5" value="0.2,0.35,0.5"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,5" value="1" tags="shotgunTurret,gunToolNailgun,meleeToolAuger,meleeToolChainsaw,garageDoorMetal_v1Powered,garageDoorIndustrial_Powered,metalReinforcedWoodDrawBridgePowered,vaultHatch_v3_Powered,vaultDoor03_Powered"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="toolForgeCrucible,autoTurret"/>
@@ -1702,6 +1704,8 @@
 		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="reqIntellectLevel10"/></level_requirements>
 
 		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="0,5" value="0,5" tags="perkGreaseMonkey"/><!-- fake crafting perk that is used to scale resources -->
+
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="vehicleWheels,vehicleBicycleChassis,vehicleBicycleHandlebars"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,5" value="1" tags="vehicleMinibikeChassis,vehicleMinibikeHandlebars"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="vehicleMotorcycleChassis,vehicleMotorcycleHandlebars"/>
@@ -2216,13 +2220,16 @@
 	</perk>
 	<perk name="perkArtOfMiningCoffee" parent="skillArtOfMining" max_level="1" base_skill_point_cost="0" name_key="bookArtOfMiningCoffee" desc_key="perkArtOfMiningCoffeeDesc" long_desc_key="perkArtOfMiningCoffeeLongDesc">
 		<effect_group>
-			<requirements compare_type="or">
-				<requirement name="HasBuff" buff="buffCoffee"/>
-				<requirement name="HasBuff" buff="buffBlackStrapCoffee"/>
-			</requirements>
-			<passive_effect name="BlockDamage" operation="perc_add" level="1" value="0.1" tags="ore">
-				<requirement name="HoldingItemHasTags" tags="miningTool"/>
-			</passive_effect>
+			<requirement name="HasBuff" buff="buffCoffee"/>
+			<requirement name="HoldingItemHasTags" tags="miningTool"/>
+				<passive_effect name="HarvestCount" operation="perc_add" level="1" value=".1" tags="oreWoodHarvest"/>
+				<passive_effect name="PlayerExpGain" operation="perc_add" level="1" value="-.05" tags="Harvesting"/>
+		</effect_group>
+		<effect_group>
+			<requirement name="HasBuff" buff="buffBlackStrapCoffee"/>
+			<requirement name="HoldingItemHasTags" tags="miningTool"/>
+				<passive_effect name="HarvestCount" operation="perc_add" level="1" value=".1" tags="oreWoodHarvest"/>
+				<passive_effect name="PlayerExpGain" operation="perc_add" level="1" value="-.05" tags="Harvesting"/>
 		</effect_group>
 	</perk>
 	<perk name="perkArtOfMiningBlackStrap" parent="skillArtOfMining" max_level="1" base_skill_point_cost="0" name_key="bookArtOfMiningBlackStrap" desc_key="perkArtOfMiningBlackStrapDesc" long_desc_key="perkArtOfMiningBlackStrapLongDesc">
@@ -2232,7 +2239,7 @@
 	</perk>
 	<perk name="perkArtOfMiningPallets" parent="skillArtOfMining" max_level="1" base_skill_point_cost="0" name_key="bookArtOfMiningPallets" desc_key="perkArtOfMiningPalletsDesc" long_desc_key="perkArtOfMiningPalletsLongDesc">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="resourceRockSmallBundle,resourceWoodBundle,resourceIronFragmentBundle,resourceOilShaleBundle,resourcePotassiumNitratePowderBundle,resourceLeadBundle,resourceCoalBundle"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="resourceRockSmallBundle,resourceWoodBundle,resourceScrapIronBundle,resourceOilShaleBundle,resourcePotassiumNitratePowderBundle,resourceLeadBundle,resourceCoalBundle"/>
 		</effect_group>
 	</perk>
 	<perk name="perkArtOfMiningAvalanche" parent="skillArtOfMining" max_level="1" base_skill_point_cost="0" desc_key="perkArtOfMiningAvalancheDesc" long_desc_key="perkArtOfMiningAvalancheLongDesc">
@@ -2242,7 +2249,7 @@
 	</perk>
 	<perk name="perkArtOfMiningLantern" parent="skillArtOfMining" max_level="1" base_skill_point_cost="0" name_key="bookArtOfMiningLantern" desc_key="perkArtOfMiningLanternDesc" long_desc_key="perkArtOfMiningLanternLongDesc">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="armorMiningHelmet,lanternLight_player,modArmorHelmetLight"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="armorMiningHelmet,modArmorHelmetLight,lanternLight_player"/>
 		</effect_group>
 	</perk>
 	<perk name="perkArtOfMiningComplete" parent="skillArtOfMining" max_level="1" base_skill_point_cost="0" desc_key="perkArtOfMiningCompleteDesc" long_desc_key="perkArtOfMiningCompleteLongDesc">
