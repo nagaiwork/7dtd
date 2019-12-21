@@ -24,6 +24,7 @@ List of hacks to be removed:
 
 
 			<!--
+			<passive_effect name="PerkLevel" tags="perkFromTheShadows" operation="base_set" value="5"/>
 			<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="Equals" value="4"/>
 
 
@@ -71,19 +72,6 @@ List of hacks to be removed:
 	<buff name="bufftest05" name_key="Buff" icon="ui_game_symbol_block_damage">
 		<display_value_key value="Test 5"/> <display_value value="xxx"/> <stack_type value="ignore"/><duration value="0"/>
 		<effect_group>
-
-
-
-
-			<triggered_effect trigger="onSelfBuffUpdate" action="LogMessage" message="max food healing reached">
-					<requirement name="StatComparePercCurrentToModMax" stat="health" operation="GT" value=".99"/>
-			</triggered_effect>
-
-			<triggered_effect trigger="onSelfBuffUpdate" action="LogMessage" message="medical healing needed">
-					<requirement name="StatComparePercModMaxToMax" stat="health" operation="LT" value=".99"/>
-			</triggered_effect>
-
-
 
 
 
@@ -215,39 +203,22 @@ List of hacks to be removed:
 	<buff name="buffStatusCheck01" hidden="true" remove_on_death="false">
 		<stack_type value="ignore"/>
 		<update_rate value="2"/>
-
-		<!--
-		<effect_group name="onDismember Test for Lathan">
-			<triggered_effect trigger="onCombatEntered" action="AddBuff" buff="buffDismemberSignal"/>
-		</effect_group>
-		-->
-
-
 		<!--
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffA17b7patch">
 				<requirement name="CVarCompare" cvar="$A17b7patch" operation="LT" value="1"/>
 			</triggered_effect>
 		</effect_group>
-		-->
+
 		<effect_group name="temp cleanup for the patch">
 			<requirement name="CVarCompare" cvar="$journalB147" operation="Equals" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="meleeWeaponStatsTip"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="rangedWeaponStatsTip"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="armorStatsTip"/>
 
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BloodDrawKitCounter" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffBloodDrawKitMaster"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffAnemia01"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffAnemia02"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffAnemia03"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffAnemia04"/>
-
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$journalB147" operation="set" value="1"/>
 		</effect_group>
-
-
-
+		-->
 		<effect_group>
 				<!--
 				<triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" cvar="$illnessChance"/>
@@ -304,18 +275,12 @@ List of hacks to be removed:
 				<triggered_effect trigger="onSelfRespawn" action="LogMessage" message="onSelfRespawn"/>
 				<triggered_effect trigger="onSelfEnteredGame" action="LogMessage" message="onSelfEnteredGame"/>
 				-->
-
-			<triggered_effect trigger="onSelfBuffStart" action="AddJournalEntry" journal="survivalTip"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddJournalEntry" journal="infectionTip"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddJournalEntry" journal="foodPoisoningTip"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddJournalEntry" journal="meleeWeaponStatsTip"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddJournalEntry" journal="rangedWeaponStatsTip"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddJournalEntry" journal="armorStatsTip"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffJournalUnlocks"/>
 
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$infectionMaxDuration" operation="set" value="25200"/> <!-- in seconds -->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$dysenteryMaxDuration" operation="set" value="3600"/> <!-- in seconds -->
 
-			<triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffStatusCheck01,buffStatusCheck02,buffPerkAbilityUpdate,buffNearDeathTraumaTrigger"/>
+			<!-- <triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffStatusCheck01,buffStatusCheck02,buffPerkAbilityUpdate,buffNearDeathTraumaTrigger"/> -->
 
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffStatusHungry01">
 				<requirement name="StatComparePercModMaxToMax" stat="Stamina" operation="LTE" value="0.5"/>
@@ -414,17 +379,17 @@ List of hacks to be removed:
 			-->
 
 			<!-- set max bleeding stacks that a player can apply -->
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$maxBleedCounter" operation="set" value="1">
-				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$maxBleedCounter" operation="set" value="2">
-				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="1"/></triggered_effect>
+				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$maxBleedCounter" operation="set" value="3">
-				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="2"/></triggered_effect>
+				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$maxBleedCounter" operation="set" value="4">
-				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="3"/></triggered_effect>
+				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="2"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$maxBleedCounter" operation="set" value="5">
-				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="4"/></triggered_effect>
+				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="3"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$maxBleedCounter" operation="set" value="6">
+				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="4"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$maxBleedCounter" operation="set" value="7">
 				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="5"/></triggered_effect>
 
 			<!-- Encumbrance from inventory slots
@@ -529,22 +494,15 @@ List of hacks to be removed:
 
 		<effect_group name="Power Attack Grunt">
 			<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" sound="player#powerattack">
+				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="0"/>
 				<requirement name="!HoldingItemBroken"/>
 				<requirement name="HoldingItemHasTags" tags="grunting"/>
 				<requirement name="!HoldingItemHasTags" tags="thrownWeapon"/>
-				<requirement name="IsLookingAtEntity"/>
-				<requirement name="CVarCompare" cvar="_notAlerted" operation="Equals" value="0" target="other"/>
-				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
-			</triggered_effect>
-			<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" sound="player#powerattack">
-				<requirement name="!HoldingItemBroken"/>
-				<requirement name="HoldingItemHasTags" tags="grunting"/>
-				<requirement name="!HoldingItemHasTags" tags="thrownWeapon"/>
-				<requirement name="IsLookingAtBlock"/>
 				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
 			</triggered_effect>
 
 			<triggered_effect trigger="onSelfSecondaryActionEnd" action="PlaySound" sound="player#powerattack">
+				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="0"/>
 				<requirement name="!HoldingItemBroken"/>
 				<requirement name="HoldingItemHasTags" tags="grunting"/>
 				<requirement name="HoldingItemHasTags" tags="thrownWeapon"/>
@@ -765,6 +723,33 @@ List of hacks to be removed:
 	</buff>
 	-->
 
+	<buff name="buffJournalUnlocks" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="500"/>
+		<update_rate value="20"/>
+		<effect_group name="staggered unlock for journal tips to avoid blocking at game start">
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$journalUnlockTimer" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$journalUnlockTimer" operation="set" value="0"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="survivalTip">
+				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="6"/> </triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="firstAidTip">
+				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="7"/> </triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="infectionTip">
+				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="8"/> </triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="waterTip">
+				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="9"/> </triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="foodPoisoningTip">
+				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="10"/> </triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="meleeWeaponStatsTip">
+				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="11"/> </triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="rangedWeaponStatsTip">
+				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="12"/> </triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="armorStatsTip">
+				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="13"/> </triggered_effect>
+		</effect_group>
+	</buff>
+
 	<buff name="buffLevelUpTracking" hidden="true" remove_on_death="false">
 		<stack_type value="ignore"/>
 		<duration value="20"/>
@@ -961,6 +946,7 @@ List of hacks to be removed:
 			<!-- Taking care of food/water not being maxed with all the game start / initial chunk generation -->
 			<passive_effect name="WaterChangeOT" operation="base_add" value="2,2" duration="0,8"/>
 			<passive_effect name="StaminaMaxModifierOT" operation="base_add" value="2,2" duration="0,8"/>
+			<passive_effect name="HealthChangeOT" operation="base_add" value="2,2" duration="0,8"/>
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="99"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="99"/>
@@ -1274,23 +1260,23 @@ Kill Streak: Successive kills increase damage bonus by 30%, 40% up to a maximum 
 
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".AnimalTrackerDelay" operation="set" value=".0117">
 				<requirement name="ProgressionLevel" progression_name="perkAnimalTracker" operation="Equals" value="1"/>
-				<requirement name="HasTrackedEntity" tags="perkAT1"/>
+				<requirement name="HasTrackedEntity" tags="perkAT01"/>
 			</triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".AnimalTrackerDelay" operation="set" value=".0117">
 				<requirement name="ProgressionLevel" progression_name="perkAnimalTracker" operation="Equals" value="2"/>
-				<requirement name="HasTrackedEntity" tags="perkAT2"/>
+				<requirement name="HasTrackedEntity" tags="perkAT02"/>
 			</triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".AnimalTrackerDelay" operation="set" value=".0117">
 				<requirement name="ProgressionLevel" progression_name="perkAnimalTracker" operation="Equals" value="3"/>
-				<requirement name="HasTrackedEntity" tags="perkAT3"/>
+				<requirement name="HasTrackedEntity" tags="perkAT03"/>
 			</triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".AnimalTrackerDelay" operation="set" value=".0117">
 				<requirement name="ProgressionLevel" progression_name="perkAnimalTracker" operation="Equals" value="4"/>
-				<requirement name="HasTrackedEntity" tags="perkAT4"/>
+				<requirement name="HasTrackedEntity" tags="perkAT04"/>
 			</triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".AnimalTrackerDelay" operation="set" value=".0117">
 				<requirement name="ProgressionLevel" progression_name="perkAnimalTracker" operation="Equals" value="5"/>
-				<requirement name="HasTrackedEntity" tags="perkAT5"/>
+				<requirement name="HasTrackedEntity" tags="perkAT05"/>
 			</triggered_effect>
 		</effect_group>
 
@@ -1316,7 +1302,7 @@ Kill Streak: Successive kills increase damage bonus by 30%, 40% up to a maximum 
 		</effect_group>
 	</buff>
 
-	<buff name="buffAnimalTrackerAcquired" name_key="buffAnimalTrackerAcquiredName" description_key="buffAnimalTrackerAcquiredDesc" icon="ui_game_symbol_animal_tracker" icon_color="0,255,0">
+	<buff name="buffAnimalTrackerAcquired" name_key="buffAnimalTrackerName" description_key="buffAnimalTrackerAcquiredDesc" icon="ui_game_symbol_animal_tracker" icon_color="0,255,0">
 		<duration value="0"/>
 		<display_value value=".AnimalTrackerLoseTimer"/>
 		<display_value_format value="time"/>
@@ -1338,36 +1324,36 @@ Kill Streak: Successive kills increase damage bonus by 30%, 40% up to a maximum 
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".AnimalTrackerTerminate" operation="set" value="1"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".AnimalTrackerTerminate" operation="set" value="0">
 				<requirement name="ProgressionLevel" progression_name="perkAnimalTracker" operation="Equals" value="1"/>
-				<requirement name="HasTrackedEntity" tags="perkAT1" />
+				<requirement name="HasTrackedEntity" tags="perkAT01" />
 			</triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".AnimalTrackerTerminate" operation="set" value="0">
 				<requirement name="ProgressionLevel" progression_name="perkAnimalTracker" operation="Equals" value="2"/>
-				<requirement name="HasTrackedEntity" tags="perkAT2" />
+				<requirement name="HasTrackedEntity" tags="perkAT02" />
 			</triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".AnimalTrackerTerminate" operation="set" value="0">
 				<requirement name="ProgressionLevel" progression_name="perkAnimalTracker" operation="Equals" value="3"/>
-				<requirement name="HasTrackedEntity" tags="perkAT3" />
+				<requirement name="HasTrackedEntity" tags="perkAT03" />
 			</triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".AnimalTrackerTerminate" operation="set" value="0">
 				<requirement name="ProgressionLevel" progression_name="perkAnimalTracker" operation="Equals" value="4"/>
-				<requirement name="HasTrackedEntity" tags="perkAT4" />
+				<requirement name="HasTrackedEntity" tags="perkAT04" />
 			</triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".AnimalTrackerTerminate" operation="set" value="0">
 				<requirement name="ProgressionLevel" progression_name="perkAnimalTracker" operation="Equals" value="5"/>
-				<requirement name="HasTrackedEntity" tags="perkAT5" />
+				<requirement name="HasTrackedEntity" tags="perkAT05" />
 			</triggered_effect>
 		</effect_group>
 
 		<effect_group name="Track animals">
-			<passive_effect name="AnimalTracking" operation="base_set" value="1" tags="perkAT1">
+			<passive_effect name="AnimalTracking" operation="base_set" value="1" tags="perkAT01">
 				<requirement name="ProgressionLevel" progression_name="perkAnimalTracker" operation="Equals" value="1"/></passive_effect>
-			<passive_effect name="AnimalTracking" operation="base_set" value="1" tags="perkAT2">
+			<passive_effect name="AnimalTracking" operation="base_set" value="1" tags="perkAT02">
 				<requirement name="ProgressionLevel" progression_name="perkAnimalTracker" operation="Equals" value="2"/></passive_effect>
-			<passive_effect name="AnimalTracking" operation="base_set" value="1" tags="perkAT3">
+			<passive_effect name="AnimalTracking" operation="base_set" value="1" tags="perkAT03">
 				<requirement name="ProgressionLevel" progression_name="perkAnimalTracker" operation="Equals" value="3"/></passive_effect>
-			<passive_effect name="AnimalTracking" operation="base_set" value="1" tags="perkAT4">
+			<passive_effect name="AnimalTracking" operation="base_set" value="1" tags="perkAT04">
 				<requirement name="ProgressionLevel" progression_name="perkAnimalTracker" operation="Equals" value="4"/></passive_effect>
-			<passive_effect name="AnimalTracking" operation="base_set" value="1" tags="perkAT5">
+			<passive_effect name="AnimalTracking" operation="base_set" value="1" tags="perkAT05">
 				<requirement name="ProgressionLevel" progression_name="perkAnimalTracker" operation="Equals" value="5"/></passive_effect>
 		</effect_group>
 
@@ -1521,9 +1507,11 @@ Kill Streak: Successive kills increase damage bonus by 30%, 40% up to a maximum 
 
 			<passive_effect name="HealthMaxModifierOT" operation="base_subtract" value="@$bleedAmount"/>
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value="@$bleedAmount"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value="@$bleedSlowdown"/>
 
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="bleedCounter" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$bleedAmount" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$bleedSlowdown" operation="set" value="0"/>
 
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="buff_bleeding" play_in_head="true"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="StopSound" sound="buff_bleeding" play_in_head="true"/>
@@ -1546,6 +1534,10 @@ Kill Streak: Successive kills increase damage bonus by 30%, 40% up to a maximum 
 -->
 		</effect_group>
 	</buff>
+
+
+
+
 
 	<buff name="buffPlayerFallingDamage" name_key="buffInjuryBleedingName" description_key="buffInjuryBleedingDesc" icon="ui_game_symbol_critical" icon_color="255,0,0" hidden="true">
 		<!-- The code does not DO fall damage. It writes the impact speed into the cvar and fires a trigger. -->
@@ -1871,7 +1863,7 @@ Kill Streak: Successive kills increase damage bonus by 30%, 40% up to a maximum 
 		</effect_group>
 	</buff>
 
-	<buff name="buffArmSprained" name_key="buffArmSprainedName" description_key="buffArmSprainedDesc" tooltip_key="buffArmSprainedTooltip" icon="ui_game_symbol_brokenbone">
+	<buff name="buffArmSprained" name_key="buffArmSprainedName" description_key="buffArmSprainedDesc" tooltip_key="buffArmSprainedDesc" icon="ui_game_symbol_brokenbone">
 		<damage_type value="sprain"/>
 		<stack_type value="replace"/>
 		<duration value="300"/>
@@ -1890,7 +1882,7 @@ Kill Streak: Successive kills increase damage bonus by 30%, 40% up to a maximum 
 		</effect_group>
 	</buff>
 
-	<buff name="buffArmBroken" name_key="buffArmBrokenName" description_key="buffArmBrokenDesc" tooltip_key="buffArmBrokenTooltip" icon="ui_game_symbol_brokenbone">
+	<buff name="buffArmBroken" name_key="buffArmBrokenName" description_key="buffArmBrokenDesc" tooltip_key="buffArmBrokenDesc" icon="ui_game_symbol_brokenbone">
 		<damage_type value="break"/>
 		<stack_type value="replace"/>
 		<duration value="3600"/>
@@ -1937,6 +1929,45 @@ Kill Streak: Successive kills increase damage bonus by 30%, 40% up to a maximum 
 	</buff>
 
 
+	<buff name="buffInjuryStunned01Shotgun" name_key="buff Injury Stunned 01 Shotgun" hidden="true" icon="ui_game_symbol_stunned" icon_color="255,128,0">
+		<damage_type value="stun"/>
+		<stack_type value="replace"/>
+		<duration value="3"/>
+		<effect_group>
+			<requirement name="!EntityTagCompare" tags="player"/>
+			<requirement name="EntityTagCompare" tags="walker"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".shotgunSuppressCooldown" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryStunned01Cooldown"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffInjuryStunned01"/>
+		</effect_group>
+	</buff>
+
+	<buff name="buffInjuryStunned02Shotgun" name_key="buff Injury Stunned 02 Shotgun" hidden="true" icon="ui_game_symbol_stunned" icon_color="255,128,0">
+		<damage_type value="stun"/>
+		<stack_type value="replace"/>
+		<duration value="3"/>
+		<effect_group>
+			<requirement name="!EntityTagCompare" tags="player"/>
+			<requirement name="EntityTagCompare" tags="walker"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".shotgunSuppressCooldown" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryStunned01Cooldown"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffInjuryStunned02"/>
+		</effect_group>
+	</buff>
+
+	<buff name="buffInjuryStunned03Shotgun" name_key="buff Injury Stunned 03 Shotgun" hidden="true" icon="ui_game_symbol_stunned" icon_color="255,128,0">
+		<damage_type value="stun"/>
+		<stack_type value="replace"/>
+		<duration value="3"/>
+		<effect_group>
+			<requirement name="!EntityTagCompare" tags="player"/>
+			<requirement name="EntityTagCompare" tags="walker"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".shotgunSuppressCooldown" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryStunned01Cooldown"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffInjuryStunned03"/>
+		</effect_group>
+	</buff>
+
 	<!-- Do not rename. Code checks for buffInjuryStunned00,01,02 by name -->
 	<buff name="buffInjuryStunned00" name_key="buffInjuryStunned01Name" description_key="buffInjuryStunned01Desc" icon="ui_game_symbol_stunned" icon_color="255,128,0">
 		<damage_type value="stun"/>
@@ -1948,11 +1979,20 @@ Kill Streak: Successive kills increase damage bonus by 30%, 40% up to a maximum 
 		</requirements>
 
 		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryStunned01"/>
+			<triggered_effect trigger="onSelfBuffStack" action="RemoveBuff" buff="buffInjuryStunned01"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryStunned02"/>
+			<triggered_effect trigger="onSelfBuffStack" action="RemoveBuff" buff="buffInjuryStunned02"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryStunned03"/>
+			<triggered_effect trigger="onSelfBuffStack" action="RemoveBuff" buff="buffInjuryStunned03"/>
+
 			<passive_effect name="RunSpeed" operation="perc_subtract" value="0.8,.2" duration="0,2"/>
 			<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.8,.2" duration="0,2"/>
 			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.8,.2" duration="0,2"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.8,.2" duration="0,2"/>
-			<passive_effect name="AttacksPerMinute" operation="perc_set" value="0.5, 1" duration="0,2"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.5,0" duration="0,2">
+				<requirement name="!EntityTagCompare" tags="player"/>
+			</passive_effect>
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.5" fade="1" effect_name="Blur"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Blur"/>
@@ -1962,6 +2002,8 @@ Kill Streak: Successive kills increase damage bonus by 30%, 40% up to a maximum 
 
 			<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="buff_stunned" play_in_head="true"/>
 			<triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound="buff_stunned" play_in_head="true"/>
+
+			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar=".shotgunSuppressCooldown" operation="set" value="0"/>
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".stunDisplay" operation="set" value="2"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".stunDisplay" operation="add" value="-1"/>
@@ -1971,23 +2013,30 @@ Kill Streak: Successive kills increase damage bonus by 30%, 40% up to a maximum 
 
 	<buff name="buffInjuryStunned01" name_key="buffInjuryStunned01Name" description_key="buffInjuryStunned01Desc" icon="ui_game_symbol_stunned" icon_color="255,128,0">
 		<damage_type value="stun"/>
-		<stack_type value="ignore"/>
+		<stack_type value="replace"/>
 		<duration value="4"/>
 		<display_value value=".stunDisplay"/><display_value_key value="{0}"/>
 
 		<requirements compare_type="or">
 			<requirement name="NotHasBuff" buff="buffDrugPainkillers"/>
-			<requirement name="NotHasBuff" buff="buffInjuryStunned02"/>
 			<requirement name="NotHasBuff" buff="buffInjuryStunned01Cooldown"/>
 		</requirements>
 
 		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryStunned00"/>
+			<triggered_effect trigger="onSelfBuffStack" action="RemoveBuff" buff="buffInjuryStunned00"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryStunned02"/>
+			<triggered_effect trigger="onSelfBuffStack" action="RemoveBuff" buff="buffInjuryStunned02"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryStunned03"/>
+			<triggered_effect trigger="onSelfBuffStack" action="RemoveBuff" buff="buffInjuryStunned03"/>
+
 			<passive_effect name="RunSpeed" operation="perc_subtract" value="0.8,.2" duration="0,4"/>
 			<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.8,.2" duration="0,4"/>
 			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.8,.2" duration="0,4"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.8,.2" duration="0,4"/>
-
-			<passive_effect name="AttacksPerMinute" operation="perc_set" value="0.5, 1" duration="0,4"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.5,0" duration="0,4">
+				<requirement name="!EntityTagCompare" tags="player"/>
+			</passive_effect>
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.5" fade="1" effect_name="Blur"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Blur"/>
@@ -1998,7 +2047,10 @@ Kill Streak: Successive kills increase damage bonus by 30%, 40% up to a maximum 
 			<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="buff_stunned" play_in_head="true"/>
 			<triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound="buff_stunned" play_in_head="true"/>
 
-			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffInjuryStunned01Cooldown"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffInjuryStunned01Cooldown">
+				<requirement name="CVarCompare" cvar=".shotgunSuppressCooldown" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar=".shotgunSuppressCooldown" operation="set" value="0"/>
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".stunDisplay" operation="set" value="4"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".stunDisplay" operation="add" value="-1"/>
@@ -2008,7 +2060,7 @@ Kill Streak: Successive kills increase damage bonus by 30%, 40% up to a maximum 
 
 	<buff name="buffInjuryStunned02" name_key="buffInjuryStunned01Name" description_key="buffInjuryStunned01Desc" icon="ui_game_symbol_stunned" icon_color="255,128,0">
 		<damage_type value="stun"/>
-		<stack_type value="ignore"/>
+		<stack_type value="replace"/>
 		<duration value="6"/>
 		<display_value value=".stunDisplay"/><display_value_key value="{0}"/>
 
@@ -2018,14 +2070,20 @@ Kill Streak: Successive kills increase damage bonus by 30%, 40% up to a maximum 
 		</requirements>
 
 		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryStunned00"/>
+			<triggered_effect trigger="onSelfBuffStack" action="RemoveBuff" buff="buffInjuryStunned00"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryStunned01"/>
+			<triggered_effect trigger="onSelfBuffStack" action="RemoveBuff" buff="buffInjuryStunned01"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryStunned03"/>
+			<triggered_effect trigger="onSelfBuffStack" action="RemoveBuff" buff="buffInjuryStunned03"/>
 
-			<passive_effect name="RunSpeed" operation="perc_subtract" value="0.8,.2" duration="0,4"/>
-			<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.8,.2" duration="0,4"/>
-			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.8,.2" duration="0,4"/>
-			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.8,.2" duration="0,4"/>
-
-			<passive_effect name="AttacksPerMinute" operation="perc_set" value="0.5,1" duration="0,4"/>
+			<passive_effect name="RunSpeed" operation="perc_subtract" value="0.8,.2" duration="0,6"/>
+			<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.8,.2" duration="0,6"/>
+			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.8,.2" duration="0,6"/>
+			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.8,.2" duration="0,6"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.5,0" duration="0,6">
+				<requirement name="!EntityTagCompare" tags="player"/>
+			</passive_effect>
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.5" fade="1" effect_name="Blur"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Blur"/>
@@ -2036,7 +2094,10 @@ Kill Streak: Successive kills increase damage bonus by 30%, 40% up to a maximum 
 			<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="buff_stunned" play_in_head="true"/>
 			<triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound="buff_stunned" play_in_head="true"/>
 
-			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffInjuryStunned01Cooldown"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffInjuryStunned01Cooldown">
+				<requirement name="CVarCompare" cvar=".shotgunSuppressCooldown" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar=".shotgunSuppressCooldown" operation="set" value="0"/>
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".stunDisplay" operation="set" value="6"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".stunDisplay" operation="add" value="-1"/>
@@ -2044,9 +2105,56 @@ Kill Streak: Successive kills increase damage bonus by 30%, 40% up to a maximum 
 		</effect_group>
 	</buff>
 
+	<buff name="buffInjuryStunned03" name_key="buffInjuryStunned01Name" description_key="buffInjuryStunned01Desc" icon="ui_game_symbol_stunned" icon_color="255,128,0">
+		<damage_type value="stun"/>
+		<stack_type value="replace"/>
+		<duration value="8"/>
+		<display_value value=".stunDisplay"/><display_value_key value="{0}"/>
+
+		<requirements compare_type="or">
+			<requirement name="NotHasBuff" buff="buffDrugPainkillers"/>
+			<requirement name="NotHasBuff" buff="buffInjuryStunned01Cooldown"/>
+		</requirements>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryStunned00"/>
+			<triggered_effect trigger="onSelfBuffStack" action="RemoveBuff" buff="buffInjuryStunned00"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryStunned01"/>
+			<triggered_effect trigger="onSelfBuffStack" action="RemoveBuff" buff="buffInjuryStunned01"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryStunned02"/>
+			<triggered_effect trigger="onSelfBuffStack" action="RemoveBuff" buff="buffInjuryStunned02"/>
+
+			<passive_effect name="RunSpeed" operation="perc_subtract" value="0.8,.2" duration="0,8"/>
+			<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.8,.2" duration="0,8"/>
+			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.8,.2" duration="0,8"/>
+			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.8,.2" duration="0,8"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.5,0" duration="0,8">
+				<requirement name="!EntityTagCompare" tags="player"/>
+			</passive_effect>
+
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.5" fade="1" effect_name="Blur"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Blur"/>
+
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="buff_stunned" play_in_head="true"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="PlaySound" sound="buff_stunned" play_in_head="true"/>
+
+			<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="buff_stunned" play_in_head="true"/>
+			<triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound="buff_stunned" play_in_head="true"/>
+
+			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffInjuryStunned01Cooldown">
+				<requirement name="CVarCompare" cvar=".shotgunSuppressCooldown" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar=".shotgunSuppressCooldown" operation="set" value="0"/>
+
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".stunDisplay" operation="set" value="8"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".stunDisplay" operation="add" value="-1"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".stunDisplay" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+
 	<buff name="buffInjuryStunned01Cooldown" hidden="true"> <duration value="3"/> <stack_type value="ignore"/> </buff>
 
-	<buff name="buffBatterUpSlowDown" name_key="buffBatterUpSlowDownName" description_key="buffBatterUpSlowDownDesc" tooltip_key="buffBatterUpSlowDownTooltip" icon="ui_game_symbol_run" icon_color="255,128,0">
+	<buff name="buffBatterUpSlowDown" name_key="buffBatterUpSlowDownName" description_key="buffBatterUpSlowDownDesc" tooltip_key="buffBatterUpSlowDownDesc" icon="ui_game_symbol_run" icon_color="255,128,0">
 		<damage_type value="stun"/>
 		<stack_type value="replace"/>
 		<duration value="6"/>
@@ -2058,31 +2166,28 @@ Kill Streak: Successive kills increase damage bonus by 30%, 40% up to a maximum 
 		</effect_group>
 	</buff>
 
-	<buff name="buffInjuryCrippled01" name_key="buffInjuryCrippled01Name" description_key="buffInjuryCrippled01Desc" tooltip_key="buffInjuryCrippled01Tooltip" icon="ui_game_symbol_stunned" icon_color="255,128,0">
+	<buff name="buffInjuryCrippled01" name_key="buff Injury Crippled 01" icon="ui_game_symbol_stunned" icon_color="255,128,0">
 		<damage_type value="stun"/>
 		<stack_type value="ignore"/>
-		<duration value="0"/>
-
-		<!--
-		<update_rate value="2.5"/>
+		<duration value="300"/>
 		<effect_group>
-			<requirement name="!EntityTagCompare" tags="walker"/>
-				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryCrippled01"/>
-		</effect_group>
-		<effect_group>
-			<requirement name="EntityTagCompare" tags="walker"/>
-				<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetInt" property="WalkType" value="5"/>
-		</effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryCrippled01">
+				<requirement name="!EntityTagCompare" tags="walker"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryCrippled01">
+				<requirement name="EntityTagCompare" tags="player"/>
+			</triggered_effect>
 
-		xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
-		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetInt" property="WalkType" value="5"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetInt" property="WalkType" value="5">
+				<requirement name="!EntityTagCompare" tags="player"/>
+				<requirement name="EntityTagCompare" tags="walker"/>
+			</triggered_effect>
 		</effect_group>
 
-		-->
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffUpdate" action="AnimatorSetInt" property="WalkType" value="5"/>
+			<requirement name="!EntityTagCompare" tags="player"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value="0.3"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.3"/>
 		</effect_group>
 	</buff>
 
@@ -2640,7 +2745,9 @@ Kill Streak: Successive kills increase damage bonus by 30%, 40% up to a maximum 
 				Player respawns / regens to 90% health/food/water -->
 
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffNearDeathTrauma"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffNearDeathTrauma">
+				<requirement name="PlayerLevel" operation="LTE" value="300"/>
+			</triggered_effect>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffNearDeathRegen"/>
 
 			<!--
@@ -2666,11 +2773,16 @@ Kill Streak: Successive kills increase damage bonus by 30%, 40% up to a maximum 
 		<!--<damage_type value="disease"/>-->
 		<stack_type value="replace"/>
 		<duration value="0"/>
+		<update_rate value="2.1"/>
 
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffNearDeathTrauma">
+			<requirements compare_type="or">
 				<requirement name="CVarCompare" cvar="_expdeficit" operation="LT" value="1"/>
-			</triggered_effect>
+				<requirement name="PlayerLevel" operation="GTE" value="300"/>
+			</requirements>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffNearDeathTrauma"/>
+
 			<!-- Added: Custom read-only variable "_difficulty"
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffNearDeathTraumaCalculate"/>
 
@@ -2723,7 +2835,7 @@ Kill Streak: Successive kills increase damage bonus by 30%, 40% up to a maximum 
 	</buff>
 
 	<!-- In the early game it was deemed too easy get in a death loop so health/food/water regen to a degree. -->
-	<buff name="buffNearDeathRegen" name_key="buffNearDeathTraumaName"  icon="ui_game_symbol_near_death_trauma" icon_color="0,255,0" hidden="false">
+	<buff name="buffNearDeathRegen" name_key="buffNearDeathTraumaName"  icon="ui_game_symbol_near_death_trauma" icon_color="0,255,0" hidden="true">
 		<stack_type value="ignore"/>
 		<duration value="100"/>
 		<display_value_key value="NDR {0}"/> <display_value value="$NearDeathRegen"/> <stack_type value="ignore"/>
@@ -2790,7 +2902,7 @@ Kill Streak: Successive kills increase damage bonus by 30%, 40% up to a maximum 
 			<triggered_effect trigger="onSelfTeleported" action="RemoveBuff" buff="buffNearDeathProtection"/>
 
 			<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffInfectionCatch,buffInfection01Main,buffInjuryBleeding,buffDrowning01,buffDrowning02,buffArmorShredding,buffLegSprained,buffLegBroken,buffArmSprained"/>
-			<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffArmBroken,buffInjuryStunned01,buffInjuryStunned02,buffInjuryCrippled01,buffInjuryKnockdown01,buffInjuryKnockdown01,buffInjuryUnconscious,buffStayDownKO"/>
+			<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffArmBroken,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffInjuryCrippled01,buffInjuryKnockdown01,buffInjuryKnockdown01,buffInjuryUnconscious,buffStayDownKO"/>
 			<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffInjuryConcussion,buffShocked,buffBurningElement,buffBurningEnvironment,buffBurningFlamingArrow,buffBurningMolotov,buffBurning"/>
 		</effect_group>
 	</buff>
@@ -3044,7 +3156,7 @@ Kill Streak: Successive kills increase damage bonus by 30%, 40% up to a maximum 
 	</buff>
 
 
-	<buff name="buffIllFoodPoisoning01" name_key="buffIllFoodPoisoning01Name" description_key="buffIllFoodPoisoning01Desc" tooltip_key="buffIllFoodPoisoning01Tooltip" icon="ui_game_symbol_food_poisoning" icon_color="255,128,0">
+	<buff name="buffIllFoodPoisoning01" name_key="buffIllFoodPoisoning01Name" description_key="buffIllFoodPoisoning01Desc" tooltip_key="buffIllFoodPoisoning01Desc" icon="ui_game_symbol_food_poisoning" icon_color="255,128,0">
 		<damage_type value="Disease"/>
 		<stack_type value="ignore"/>
 		<duration value="5"/>
@@ -3200,13 +3312,6 @@ Kill Streak: Successive kills increase damage bonus by 30%, 40% up to a maximum 
 				<requirement name="CVarCompare" cvar="infectionCounter" operation="LT" value="0"/>
 			</triggered_effect>
 
-			<!--
-			<effect_group>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffDrugHoneyDuration" operation="subtract" value="@$MetabolismDuration"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffDrugHoneyDisplay" operation="set" value="@$buffDrugHoneyDuration"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffDrugHoneyDisplay" operation="divide" value="@$MetabolismDuration"/>
-			</effect_group>
-			-->
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$infectionCureCounter" operation="add" value="-2">
 				<requirement name="CVarCompare" cvar="$infectionCureCounter" operation="GT" value="0"/>
 			</triggered_effect>
@@ -3876,7 +3981,7 @@ icon="ui_game_symbol_pack_mule"
 		</effect_group>
 	</buff>
 
-	<buff name="buffDrowning01" name_key="buffDrowning01Name" description_key="buffDrowning01Desc" tooltip_key="buffDrowning01Tooltip" icon="ui_game_symbol_oxygen">
+	<buff name="buffDrowning01" name_key="buffDrowning01Name" description_key="buffDrowning01Desc" tooltip_key="buffDrowning01Desc" icon="ui_game_symbol_oxygen">
 		<damage_type value="Suffocation"/>
 		<duration value="0"/>
 		<display_value value=".DrowningTimerDisplay"/><display_value_key value="{0}"/>
@@ -3904,7 +4009,7 @@ icon="ui_game_symbol_pack_mule"
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".DrowningTimerDisplay" operation="set" value="0"/>
 		</effect_group>
 	</buff>
-	<buff name="buffDrowning02" name_key="buffDrowning02Name" description_key="buffDrowning02Desc" tooltip_key="buffDrowning02Tooltip" icon="ui_game_symbol_oxygen" icon_color="255,128,0">
+	<buff name="buffDrowning02" name_key="buffDrowning01Name" description_key="buffDrowning02Desc" tooltip_key="buffDrowning02Tooltip" icon="ui_game_symbol_oxygen" icon_color="255,128,0">
 		<damage_type value="Suffocation"/>
 		<duration value="0"/>
 		<display_value value=".DrowningTimerDisplay"/><display_value_key value="{0}"/>
@@ -3930,7 +4035,7 @@ icon="ui_game_symbol_pack_mule"
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".DrowningTimerDisplay" operation="set" value="0"/>
 		</effect_group>
 	</buff>
-	<buff name="buffDrowning03" name_key="buffDrowning03Name" description_key="buffDrowning03Desc" tooltip_key="buffDrowning03Tooltip" icon="ui_game_symbol_oxygen" icon_color="255,0,0" icon_blink="true">
+	<buff name="buffDrowning03" name_key="buffDrowning03Name" description_key="buffDrowning03Desc" tooltip_key="buffDrowning03Desc" icon="ui_game_symbol_oxygen" icon_color="255,0,0" icon_blink="true">
 		<damage_type value="Suffocation"/>
 		<duration value="1000"/>
 		<effect_group>
@@ -3968,139 +4073,40 @@ icon="ui_game_symbol_pack_mule"
 		</effect_group>
 	</buff>
 	-->
-	<buff name="buffBloodDrawKitMain" name_key="buff BloodDrawKit Main" hidden="true" remove_on_death="false" icon="ui_game_symbol_skull">
-		<damage_type value="Disease"/>
+	<buff name="buffBloodDrawKitMain" hidden="true" remove_on_death="false" icon="ui_game_symbol_skull">
 		<stack_type value="replace"/>
 		<duration value="0"/>
-		<update_rate value="4.15"/>
-
-		<!-- BloodDrawKit is fully %-based. $BloodDrawKitCounter is a float % value. BloodDrawKit kills the player when it reaches 100%, cures when it reaches 0%. -->
-		<effect_group name="signaling buffs">
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BloodDrawKitCounter" operation="add" value="-.197"/><!-- max duration 2100s -->
-
-			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffBloodDrawKit01">
-				<requirement name="NotHasBuff" buff="buffBloodDrawKit01"/>
-				<requirement name="CVarCompare" cvar="$BloodDrawKitCounter" operation="GT" value="0"/>
-				<requirement name="CVarCompare" cvar="$BloodDrawKitCounter" operation="LT" value="33"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffBloodDrawKit02">
-				<requirement name="NotHasBuff" buff="buffBloodDrawKit02"/>
-				<requirement name="CVarCompare" cvar="$BloodDrawKitCounter" operation="GTE" value="33"/>
-				<requirement name="CVarCompare" cvar="$BloodDrawKitCounter" operation="LT" value="66"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffBloodDrawKit03">
-				<requirement name="NotHasBuff" buff="buffBloodDrawKit03"/>
-				<requirement name="CVarCompare" cvar="$BloodDrawKitCounter" operation="GTE" value="66"/>
-				<requirement name="CVarCompare" cvar="$BloodDrawKitCounter" operation="LT" value="100"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffBloodDrawKit04">
-				<requirement name="CVarCompare" cvar="$BloodDrawKitCounter" operation="GTE" value="100"/></triggered_effect>
-
-			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="buffBloodDrawKit01">
-				<requirement name="NotHasBuff" buff="buffBloodDrawKit01"/>
-				<requirement name="CVarCompare" cvar="$BloodDrawKitCounter" operation="GT" value="0"/>
-				<requirement name="CVarCompare" cvar="$BloodDrawKitCounter" operation="LT" value="33"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="buffBloodDrawKit02">
-				<requirement name="NotHasBuff" buff="buffBloodDrawKit02"/>
-				<requirement name="CVarCompare" cvar="$BloodDrawKitCounter" operation="GTE" value="33"/>
-				<requirement name="CVarCompare" cvar="$BloodDrawKitCounter" operation="LT" value="66"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="buffBloodDrawKit03">
-				<requirement name="NotHasBuff" buff="buffBloodDrawKit03"/>
-				<requirement name="CVarCompare" cvar="$BloodDrawKitCounter" operation="GTE" value="66"/>
-				<requirement name="CVarCompare" cvar="$BloodDrawKitCounter" operation="LT" value="100"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="buffBloodDrawKit04">
-				<requirement name="CVarCompare" cvar="$BloodDrawKitCounter" operation="GTE" value="100"/></triggered_effect>
-
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffBloodDrawKit01">
-				<requirement name="NotHasBuff" buff="buffBloodDrawKit01"/>
-				<requirement name="CVarCompare" cvar="$BloodDrawKitCounter" operation="GT" value="0"/>
-				<requirement name="CVarCompare" cvar="$BloodDrawKitCounter" operation="LT" value="33"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffBloodDrawKit02">
-				<requirement name="NotHasBuff" buff="buffBloodDrawKit02"/>
-				<requirement name="CVarCompare" cvar="$BloodDrawKitCounter" operation="GTE" value="33"/>
-				<requirement name="CVarCompare" cvar="$BloodDrawKitCounter" operation="LT" value="66"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffBloodDrawKit03">
-				<requirement name="NotHasBuff" buff="buffBloodDrawKit03"/>
-				<requirement name="CVarCompare" cvar="$BloodDrawKitCounter" operation="GTE" value="66"/>
-				<requirement name="CVarCompare" cvar="$BloodDrawKitCounter" operation="LT" value="100"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffBloodDrawKit04">
-				<requirement name="CVarCompare" cvar="$BloodDrawKitCounter" operation="GTE" value="100"/></triggered_effect>
-
-
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffBloodDrawKitMain">
-				<requirement name="CVarCompare" cvar="$BloodDrawKitCounter" operation="LTE" value="0"/>
-			</triggered_effect>
-			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BloodDrawKitCounter" operation="set" value="0"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BloodDrawKitCounter" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffBloodDrawKitMain"/>
 		</effect_group>
 	</buff>
-
-	<buff name="buffBloodDrawKit01" name_key="buffBloodDrawKit01Name" description_key="buffBloodDrawKit01Desc" icon="ui_game_symbol_skull">
-		<damage_type value="Disease"/>
+	<buff name="buffBloodDrawKit01" hidden="true" icon="ui_game_symbol_skull">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
-		<display_value value="$BloodDrawKitCounter"/><display_value_key value="{0:0.0}%"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBloodDrawKit02"/>
-			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBloodDrawKit03"/>
-
-			<passive_effect name="WaterChangeOT" operation="base_add" value=".0166"/><!-- 1 per minute -->
-			<passive_effect name="StaminaLossMaxMult" operation="base_add" value=".0166"/>
-
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffBloodDrawKit01">
-				<requirement name="NotHasBuff" buff="buffBloodDrawKitMain"/>
-			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffBloodDrawKit01"/>
 		</effect_group>
 	</buff>
-	<buff name="buffBloodDrawKit02" name_key="buffBloodDrawKit02Name" description_key="buffBloodDrawKit02Desc" icon="ui_game_symbol_skull" icon_color="255,64,0">
-		<damage_type value="Disease"/>
+	<buff name="buffBloodDrawKit02" hidden="true" icon="ui_game_symbol_skull">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
-		<display_value value="$BloodDrawKitCounter"/><display_value_key value="{0:0.0}%"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBloodDrawKit01"/>
-			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBloodDrawKit03"/>
-
-			<passive_effect name="WaterChangeOT" operation="base_add" value=".0208"/><!-- 1.25 per minute -->
-			<passive_effect name="StaminaLossMaxMult" operation="base_add" value=".0208"/>
-
-			<passive_effect name="AttributeLevel" operation="base_subtract" value="1" tags="attStrength,attFortitude"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffPerkAbilityUpdate"/>
-			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffPerkAbilityUpdate"/>
-
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffBloodDrawKit02">
-				<requirement name="NotHasBuff" buff="buffBloodDrawKitMain"/>
-			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffBloodDrawKit02"/>
 		</effect_group>
 	</buff>
-	<buff name="buffBloodDrawKit03" name_key="buffBloodDrawKit03Name" description_key="buffBloodDrawKit03Desc" icon="ui_game_symbol_skull" icon_color="255,0,0">
-		<damage_type value="Disease"/>
+	<buff name="buffBloodDrawKit03" hidden="true" icon="ui_game_symbol_skull">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
-		<display_value value="$BloodDrawKitCounter"/><display_value_key value="{0:0.0}%"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBloodDrawKit01"/>
-			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBloodDrawKit02"/>
-
-			<passive_effect name="WaterChangeOT" operation="base_add" value=".025"/><!-- 1.5 per minute -->
-			<passive_effect name="StaminaLossMaxMult" operation="base_add" value=".025"/>
-
-			<passive_effect name="AttributeLevel" operation="base_subtract" value="1" tags="attPerception,attStrength,attFortitude,attAgility,attIntellect"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffPerkAbilityUpdate"/>
-			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffPerkAbilityUpdate"/>
-
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffBloodDrawKit03">
-				<requirement name="NotHasBuff" buff="buffBloodDrawKitMain"/>
-			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffBloodDrawKit03"/>
 		</effect_group>
 	</buff>
-	<buff name="buffBloodDrawKit04" name_key="buffBloodDrawKit04Name" tooltip_key="buffBloodDrawKit04Tooltip" icon="ui_game_symbol_skull" icon_color="255,0,0">
-		<damage_type value="Disease"/>
+	<buff name="buffBloodDrawKit04" hidden="true" icon="ui_game_symbol_skull">
 		<stack_type value="ignore"/>
-		<duration value=".1"/>
+		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBloodDrawKit01"/>
-			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBloodDrawKit02"/>
-			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBloodDrawKit03"/>
-
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$BloodDrawKitCounter" operation="set" value="99"/>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="subtract" value="99999999"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffBloodDrawKit04"/>
 		</effect_group>
 	</buff>
 
@@ -4134,7 +4140,7 @@ icon="ui_game_symbol_pack_mule"
 		</effect_group>
 	</buff>
 
-	<buff name="buffCoffee" name_key="buffCoffeeName" description_key="buffCoffeeDesc" icon="ui_game_symbol_coffee">
+	<buff name="buffCoffee" name_key="drinkJarCoffee" description_key="drinkJarCoffeeDesc" icon="ui_game_symbol_coffee">
 		<stack_type value="replace"/><duration value="0"/>
 		<display_value value=".buffCoffeeDisplay"/><display_value_format value="time"/>
 		<effect_group>
@@ -4218,26 +4224,28 @@ icon="ui_game_symbol_pack_mule"
 		</effect_group>
 		<effect_group>
 			<requirement name="CVarCompare" cvar="$buffBeerDuration" operation="LTE" value="0"/>
-				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffBeerDisplay" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffBeerDuration" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffBeer"/>
 		</effect_group>
 
 		<effect_group>
-		<passive_effect name="EntityDamage" operation="perc_add" value="3">
-			<requirement name="HoldingItemHasTags" tags="perkBrawler"/>
-		</passive_effect>
+			<passive_effect name="EntityDamage" operation="perc_add" value="3">
+				<requirement name="HoldingItemHasTags" tags="perkBrawler"/>
+			</passive_effect>
 
-		<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.5">
-			<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
-		</passive_effect>
-		<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.35">
-			<requirement name="HasBuff" buff="buffHealWaterMax"/>
-		</passive_effect>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.5">
+				<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
+			</passive_effect>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.35">
+				<requirement name="HasBuff" buff="buffHealWaterMax"/>
+			</passive_effect>
 
-		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.3" effect_name="Drunk"/>
-		<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" effect_name="Drunk"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffInjuryStunned01"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.3" effect_name="Drunk"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" effect_name="Drunk"/>
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffInjuryStunned01"/>
+
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffBeerDisplay" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffBeerDuration" operation="set" value="0"/>
 		</effect_group>
 	</buff>
 
@@ -4294,7 +4302,6 @@ icon="ui_game_symbol_pack_mule"
 		</effect_group>
 		<effect_group>
 			<requirement name="CVarCompare" cvar="$buffGrandpasMoonshineDuration" operation="LTE" value="0"/>
-				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffGrandpasMoonshineDisplay" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffGrandpasMoonshineDuration" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffDrunkGrandpasMoonshine"/>
 		</effect_group>
@@ -4313,6 +4320,9 @@ icon="ui_game_symbol_pack_mule"
 			<passive_effect name="HealthChangeOT" operation="base_add" value="20"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="4" effect_name="Drunk"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="4" effect_name="Drunk"/>
+
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffGrandpasMoonshineDuration" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffGrandpasMoonshineDisplay" operation="set" value="0"/>
 		</effect_group>
 	</buff>
 
@@ -4355,7 +4365,25 @@ icon="ui_game_symbol_pack_mule"
 		</effect_group>
 	</buff>
 
-	<buff name="buffShamChowder" name_key="buffShamChowderName" description_key="buffShamChowderDesc" icon="ui_game_symbol_assemble">
+	<buff name="buffPumpkinCheesecake" name_key="foodPumpkinCheesecake" description_key="foodPumpkinCheesecakeDesc" icon="ui_game_symbol_fork">
+		<stack_type value="replace"/><duration value="0"/>
+		<display_value value=".buffPumpkinCheesecakeDisplay"/><display_value_format value="time"/>
+		<effect_group>
+			<passive_effect name="BarteringBuying" operation="base_add" value=".05"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffPumpkinCheesecakeDuration" operation="subtract" value="@$MetabolismDuration"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffPumpkinCheesecakeDisplay" operation="set" value="@$buffPumpkinCheesecakeDuration"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffPumpkinCheesecakeDisplay" operation="divide" value="@$MetabolismDuration"/>
+		</effect_group>
+		<effect_group>
+			<requirement name="CVarCompare" cvar="$buffPumpkinCheesecakeDuration" operation="LTE" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffPumpkinCheesecakeDisplay" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffPumpkinCheesecakeDuration" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffPumpkinCheesecake"/>
+		</effect_group>
+	</buff>
+
+	<buff name="buffShamChowder" name_key="foodShamChowder" description_key="foodShamChowderDesc" icon="ui_game_symbol_fork">
 		<stack_type value="replace"/><duration value="0"/>
 		<display_value value=".buffShamChowderDisplay"/><display_value_format value="time"/>
 		<effect_group>
@@ -4376,7 +4404,7 @@ icon="ui_game_symbol_pack_mule"
 		</effect_group>
 	</buff>
 
-	<buff name="buffDrugSteroids" name_key="buffDrugSteroidsName" description_key="buffDrugSteroidsDesc" icon="ui_game_symbol_steroids">
+	<buff name="buffDrugSteroids" name_key="drugSteroids" description_key="drugSteroidsDesc" icon="ui_game_symbol_steroids">
 		<stack_type value="replace"/><duration value="0"/>
 		<display_value value=".buffDrugSteroidsDisplay"/><display_value_format value="time"/>
 		<effect_group>
@@ -4417,7 +4445,7 @@ icon="ui_game_symbol_pack_mule"
 		</effect_group>
 	</buff>
 
-	<buff name="buffDrugRecog" name_key="buffDrugRecogName" description_key="buffDrugRecogDesc" tooltip_key="buffDrugRecogTooltip" icon="ui_game_symbol_gunslinger">
+	<buff name="buffDrugRecog" name_key="drugRecog" description_key="drugRecogDesc" tooltip_key="buffDrugRecogTooltip" icon="ui_game_symbol_gunslinger">
 		<stack_type value="replace"/><duration value="0"/>
 		<display_value value=".buffDrugRecogDisplay"/><display_value_format value="time"/>
 		<effect_group>
@@ -4427,7 +4455,6 @@ icon="ui_game_symbol_pack_mule"
 		</effect_group>
 		<effect_group>
 			<requirement name="CVarCompare" cvar="$buffDrugRecogDuration" operation="LTE" value="0"/>
-				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffDrugRecogDisplay" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffDrugRecogDuration" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffDrugRecog"/>
 		</effect_group>
@@ -4445,6 +4472,9 @@ icon="ui_game_symbol_pack_mule"
 			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffDrugRecogSideEffect">
 				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="25"/>
 			</triggered_effect>
+
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffDrugRecogDuration" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffDrugRecogDisplay" operation="set" value="0"/>
 		</effect_group>
 	</buff>
 	<buff name="buffDrugRecogSideEffect" name_key="buffDrugRecogSideEffectName" description_key="buffDrugRecogSideEffectDesc" icon="ui_game_symbol_gunslinger" icon_color="255,128,0">
@@ -4467,7 +4497,7 @@ icon="ui_game_symbol_pack_mule"
 		</effect_group>
 	</buff>
 
-	<buff name="buffDrugFortBites" name_key="buffDrugFortBitesName" description_key="buffDrugFortBitesDesc" tooltip_key="buffDrugFortBitesTooltip" icon="ui_game_symbol_defense">
+	<buff name="buffDrugFortBites" name_key="drugFortBites" description_key="drugFortBitesDesc" tooltip_key="buffDrugFortBitesTooltip" icon="ui_game_symbol_defense">
 		<stack_type value="replace"/><duration value="0"/>
 		<display_value value=".buffDrugFortBitesDisplay"/><display_value_format value="time"/>
 		<effect_group>
@@ -4723,7 +4753,7 @@ icon="ui_game_symbol_pack_mule"
 			<triggered_effect trigger="onSelfBuffRemove" action="PlaySound" sound="forge_fire_die" play_in_head="true"/>
 		</effect_group>
 	</buff>
-	<buff name="buffRingOfFireEffect" name_key="buffRingOfFireEffectName" description_key="buffRingOfFireEffectDesc" tooltip_key="buffRingOfFireEffectDesc"
+	<buff name="buffRingOfFireEffect" name_key="buffRingOfFireName" description_key="buffRingOfFireEffectDesc" tooltip_key="buffRingOfFireEffectDesc"
 		icon="ui_game_symbol_fire" icon_color="255,0,0" icon_blink="true">
 		<damage_type value="heat"/>
 		<stack_type value="ignore"/>
@@ -4826,27 +4856,7 @@ icon="ui_game_symbol_pack_mule"
 
 <!-- ****************** Deprecated Buffs? (Needs review) ****************** -->
 
-	<buff name="buffBurningSmall">
-	</buff>
-
-	<buff name="buffArrowCriticalBleedout">
-	</buff>
-
-	<buff name="buffDrugRedPill">
-	</buff>
-
-	<buff name="buffDrugBluePill">
-	</buff>
-
-	<buff name="buffYuccaJuiceCooling">
-	</buff>
-
-	<buff name="buffExtinguishFireBuff">
-	</buff>
-
-	<buff name="buffEatSnowberryTrigger">
-	</buff>
-
+	<buff name="buffArrowCriticalBleedout"><duration value=".1"/></buff>
 
 	<buff name="buffToolMsg" name_key="buffToolMsgName" description_key="buffToolMsgDesc" tooltip_key="buffToolMsgTooltip" icon="ui_game_symbol_skull">
 		<duration value="10"/>
@@ -5040,8 +5050,8 @@ REQUIREMENTS / CONDITIONS:             list of requirements list
 							  *in theory* <passive_effect name="EntityDamage" operation="perc_add" value="100" tags="club"/>
 							  will match tags on a held/equipped item but there is no guarantee every coder has passed the tags to every bit of code. You can try it. =)
 		IsItemActive			(?) For activated items. Use only on the item/mod in question or the scope gets messy.
-		IsLookingAtBlock		tags, has_all_tags
-		IsLookingAtEntity		tags, has_all_tags
+		IsLookingAtBlock		(not hooked up)		tags, has_all_tags
+		IsLookingAtEntity		(not hooked up)		tags, has_all_tags
 		IsStatAtMax			stat (Health,MaxStamina,Stamina,Water);  detects if a stat is within 0.1f UNITS of max, not %.
 
 
@@ -5112,8 +5122,7 @@ Tags can be used to limit passive effects to certain (hit) locations, states, or
 		<passive_effect name="JumpStrength" operation="base_set" value="0.13"/>
 		<passive_effect name="JumpStrength" operation="base_set" value="0.15" tags="running"/>
 
-	Hit location:
-		head,upperbody,lowerbody
+	Hit location (see below)
 
 	Item tags:
 		With passives you can not simply check the tags of the weapon you are using.
@@ -5190,6 +5199,7 @@ MinEvents / Triggers
 	onSelfPrimaryActionAttackFinished  n/a?
 	onSelfPrimaryActionRayMiss		attack has not hit an entity and has not hit a block
 
+	onSelfPrimaryActionGrazeHit
 	onSelfPrimaryActionGrazeMiss		attack has not hit an entity and has not hit a block
 
 	onSelfRangedBurstShot			on shots that are fired while holding the trigger down, between ActionStart and AttackFinished.
@@ -5201,6 +5211,7 @@ MinEvents / Triggers
 	onSelfSecondaryActionAttackFinished  n/a?
 	onSelfSecondaryActionRayMiss		attack has not hit an entity and has not hit a block
 
+	onSelfSecondaryActionGrazeHit
 	onSelfSecondaryActionGrazeMiss	attack has not hit an entity and has not hit a block
 
 	onSelfExplosionAttackedOther
@@ -5740,7 +5751,7 @@ LIST OF PASSIVE EFFECTS   (it does not matter on which item/entity a passive is 
 	SilenceBlockSteps,		Sneaking over trash makes no sound.
 	CraftingIngredientCount
 	EntityPenetrationCount
-
+	BlockPenetrationFactor,	default=251; This many block hit points reduce EntityPenetrationCount by 1.  251 is just enough to penetrate 1 wood block or door.
 
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 	LIST OF PASSIVE ARMOR EFFECTS

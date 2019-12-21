@@ -61,6 +61,7 @@
 		<spawn maxcount="1" respawndelay="3" time="Day" entitygroup="ZombiesBurntForest" />
 		<spawn maxcount="1" respawndelay="4" time="Night" entitygroup="ZombiesNight" />
 		<spawn maxcount="1" respawndelay="14" time="Any" entitygroup="EnemyAnimalsBurntForest" spawnDeadChance="0" />
+		<spawn maxcount="1" respawndelay="21" time="Any" entitygroup="FriendlyAnimalsBurntForest" spawnDeadChance="0" />
 	</biome>
 
 	<biome name="snow">

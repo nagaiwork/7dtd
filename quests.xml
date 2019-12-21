@@ -730,7 +730,11 @@
 
 		<objective type="AnimalKill" id="animalRabbit" value="5"/>
 
-		<requirement type="Holding" id="gunPumpShotgun"/>
+		<requirement type="Group" id="requirementGroupShotgun" value="OR" phase="1">
+			<requirement type="Holding" id="gunDoubleBarrelShotgun"/>
+			<requirement type="Holding" id="gunPumpShotgun"/>
+		</requirement>
+
 
 		<objective type="InteractWithNPC">
 			<property name="phase" value="2"/>
@@ -852,7 +856,7 @@
 
 	<quest id="treasure_taylor">
 		<property name="name_key" value="treasure_taylor"/>
-		<property name="subtitle_key" value="treasure_taylor_subtitle"/>
+		<property name="subtitle_key" value="treasure_taylor"/>
 		<property name="description_key" value="treasure_taylor_offer"/>
 		<property name="icon" value="ui_game_symbol_map"/>
 		<property name="repeatable" value="true"/>
@@ -869,7 +873,7 @@
 
 	<quest id="treasure_nickole">
 		<property name="name_key" value="treasure_nickole"/>
-		<property name="subtitle_key" value="treasure_nickole_subtitle"/>
+		<property name="subtitle_key" value="treasure_nickole"/>
 		<property name="description_key" value="treasure_nickole_offer"/>
 		<property name="icon" value="ui_game_symbol_map"/>
 		<property name="repeatable" value="true"/>
@@ -886,7 +890,7 @@
 
 	<quest id="treasure_stephan">
 		<property name="name_key" value="treasure_stephan"/>
-		<property name="subtitle_key" value="treasure_stephan_subtitle"/>
+		<property name="subtitle_key" value="treasure_stephan"/>
 		<property name="description_key" value="treasure_stephan_offer"/>
 		<property name="icon" value="ui_game_symbol_map"/>
 		<property name="repeatable" value="true"/>
@@ -903,7 +907,7 @@
 
 	<quest id="treasure_jennifer">
 		<property name="name_key" value="treasure_jennifer"/>
-		<property name="subtitle_key" value="treasure_jennifer_subtitle"/>
+		<property name="subtitle_key" value="treasure_jennifer"/>
 		<property name="description_key" value="treasure_jennifer_offer"/>
 		<property name="icon" value="ui_game_symbol_map"/>
 		<property name="repeatable" value="true"/>
@@ -920,7 +924,7 @@
 
 	<quest id="treasure_claude">
 		<property name="name_key" value="treasure_claude"/>
-		<property name="subtitle_key" value="treasure_claude_subtitle"/>
+		<property name="subtitle_key" value="treasure_claude"/>
 		<property name="description_key" value="treasure_claude_offer"/>
 		<property name="icon" value="ui_game_symbol_map"/>
 		<property name="repeatable" value="true"/>
@@ -937,7 +941,7 @@
 
 	<quest id="treasure_sarah">
 		<property name="name_key" value="treasure_sarah"/>
-		<property name="subtitle_key" value="treasure_sarah_subtitle"/>
+		<property name="subtitle_key" value="treasure_sarah"/>
 		<property name="description_key" value="treasure_sarah_offer"/>
 		<property name="icon" value="ui_game_symbol_map"/>
 		<property name="repeatable" value="true"/>
@@ -954,7 +958,7 @@
 
 	<quest id="treasure_raphael">
 		<property name="name_key" value="treasure_raphael"/>
-		<property name="subtitle_key" value="treasure_raphael_subtitle"/>
+		<property name="subtitle_key" value="treasure_raphael"/>
 		<property name="description_key" value="treasure_raphael_offer"/>
 		<property name="icon" value="ui_game_symbol_map"/>
 		<property name="repeatable" value="true"/>
@@ -1015,14 +1019,14 @@
 		</objective>
 
 		<reward type="Exp" value="2500"/>
-		<reward type="Item" id="casinoCoin" value="560"/>
+		<reward type="Item" id="casinoCoin" value="330"/>
 
-		<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="2"/>
-		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="2"/>
-		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="2"/>
-		<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" value="2"/>
-		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="2"/>
-		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="1"/>
+		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="1"/>
+		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
+		<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" value="1"/>
+		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
 	</quest>
 
 	<quest id="tier2_fetch">
@@ -1071,14 +1075,14 @@
 		</objective>
 
 		<reward type="Exp" value="3750"/>
-		<reward type="Item" id="casinoCoin" value="940"/>
+		<reward type="Item" id="casinoCoin" value="560"/>
 
-		<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="3"/>
-		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="3"/>
-		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="3"/>
-		<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" value="3"/>
-		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="3"/>
-		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="3"/>
+		<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="2"/>
+		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="2"/>
+		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="2"/>
 	</quest>
 
 	<quest id="tier3_fetch">
@@ -1127,14 +1131,14 @@
 		</objective>
 
 		<reward type="Exp" value="5000"/>
-		<reward type="Item" id="casinoCoin" value="1340"/>
+		<reward type="Item" id="casinoCoin" value="800"/>
 
-		<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="4"/>
-		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="4"/>
-		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="4"/>
-		<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" value="4"/>
-		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="4"/>
-		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="4"/>
+		<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="3"/>
+		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="3"/>
+		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="3"/>
+		<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" value="3"/>
+		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="3"/>
+		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="3"/>
 	</quest>
 
 	<quest id="tier4_fetch">
@@ -1183,14 +1187,14 @@
 		</objective>
 
 		<reward type="Exp" value="6250"/>
-		<reward type="Item" id="casinoCoin" value="1700"/>
+		<reward type="Item" id="casinoCoin" value="1020"/>
 
-		<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="5"/>
-		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="5"/>
-		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="5"/>
-		<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" value="5"/>
-		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="5"/>
-		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="5"/>
+		<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="4"/>
+		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="4"/>
+		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="4"/>
+		<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" value="4"/>
+		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="4"/>
+		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="4"/>
 	</quest>
 
 	<quest id="tier5_fetch">
@@ -1239,14 +1243,14 @@
 		</objective>
 
 		<reward type="Exp" value="12500"/>
-		<reward type="Item" id="casinoCoin" value="3400"/>
+		<reward type="Item" id="casinoCoin" value="2040"/>
 
-		<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="6"/>
-		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="6"/>
-		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="6"/>
+		<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="5"/>
+		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="5"/>
+		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="5"/>
+		<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" value="5"/>
+		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="5"/>
+		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="5"/>
 	</quest>
 
 	<quest id="tier6_fetch">
@@ -1562,12 +1566,12 @@
 		<reward type="Exp" value="15000"/>
 		<reward type="Item" id="casinoCoin" value="4080"/>
 
-		<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" isfixed="true" value="6"/>
-		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="6"/>
-		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="6"/>
+		<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" isfixed="true" value="7"/>
+		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="7"/>
+		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="7"/>
+		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="7"/>
+		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="7"/>
+		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="7"/>
 	</quest>
 
 	<quest id="tier6_clear">
@@ -1855,12 +1859,12 @@
 		<reward type="Exp" value="16900"/>
 		<reward type="Item" id="casinoCoin" value="4600"/>
 
-		<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" isfixed="true" value="6"/>
-		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="6"/>
-		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="6"/>
+		<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" isfixed="true" value="7"/>
+		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="7"/>
+		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="7"/>
+		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="7"/>
+		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="7"/>
+		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="7"/>
 	</quest>
 
 	<quest id="tier6_fetch_clear">
@@ -2268,13 +2272,20 @@
 			<property name="phase" value="1"/>
 		</objective>
 
-		<reward type="Skill" id="Influence" value="1000000"/>
+		<!-- <reward type="Skill" id="Influence" value="1000000"/> -->
 		<reward type="Exp" value="2500"/>
 
-		<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" isfixed="true" value="2"/>
+		<!-- <reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" isfixed="true" value="2"/> -->
+		<!-- <reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="2"/> -->
+		<!-- <reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="2"/> -->
+		<!-- <reward type="LootItem" id="groupQuestTools" ischosen="true" value="2"/> -->
+		<!-- <reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="2"/> -->
+		<!-- <reward type="LootItem" id="groupQuestMods" ischosen="true" value="2"/> -->
+		
+		<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="2"/>
 		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="2"/>
 		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="2"/>
-		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" value="2"/>
 		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="2"/>
 		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="2"/>
 	</quest>
@@ -2312,7 +2323,7 @@
 		<property name="category_key" value="reward"/>
 		<property name="difficulty" value="easy"/>
 		<property name="completiontype" value="TurnIn"/>
-		<property name="completion_key" value="quest_tier_complete_competion"/>
+		<property name="completion_key" value="quest_tier_complete_completion"/>
 
 		<reward type="Item" id="casinoCoin" value="2000"/>
 		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" isfixed="true" value="12"/>
@@ -2332,7 +2343,7 @@
 		<property name="category_key" value="reward"/>
 		<property name="difficulty" value="easy"/>
 		<property name="completiontype" value="TurnIn"/>
-		<property name="completion_key" value="quest_tier_complete_competion"/>
+		<property name="completion_key" value="quest_tier_complete_completion"/>
 
 		<reward type="Item" id="casinoCoin" value="2000"/>
 		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" isfixed="true" value="13"/>
@@ -2352,7 +2363,7 @@
 		<property name="category_key" value="reward"/>
 		<property name="difficulty" value="easy"/>
 		<property name="completiontype" value="TurnIn"/>
-		<property name="completion_key" value="quest_tier_complete_competion"/>
+		<property name="completion_key" value="quest_tier_complete_completion"/>
 
 		<reward type="Item" id="casinoCoin" value="2000"/>
 		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" isfixed="true" value="14"/>
@@ -2372,7 +2383,7 @@
 		<property name="category_key" value="reward"/>
 		<property name="difficulty" value="easy"/>
 		<property name="completiontype" value="TurnIn"/>
-		<property name="completion_key" value="quest_tier_complete_competion"/>
+		<property name="completion_key" value="quest_tier_complete_completion"/>
 
 		<reward type="Item" id="casinoCoin" value="2000"/>
 		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" isfixed="true" value="15"/>
@@ -2392,7 +2403,7 @@
 		<property name="category_key" value="reward"/>
 		<property name="difficulty" value="easy"/>
 		<property name="completiontype" value="TurnIn"/>
-		<property name="completion_key" value="quest_tier5_complete_competion"/>
+		<property name="completion_key" value="quest_tier5_complete_completion"/>
 
 		<reward type="Item" id="casinoCoin" value="2000"/>
 		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" isfixed="true" value="16"/>
@@ -2412,7 +2423,7 @@
 		<property name="category_key" value="reward"/>
 		<property name="difficulty" value="easy"/>
 		<property name="completiontype" value="TurnIn"/>
-		<property name="completion_key" value="quest_tier6_complete_competion"/>
+		<property name="completion_key" value="quest_tier6_complete_completion"/>
 
 		<reward type="Item" id="casinoCoin" value="2000"/>
 		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" isfixed="true" value="16"/>
@@ -2465,8 +2476,8 @@
 	</quest_list>
 
 	<quest_items max_count="100">
-		<quest_item id="1" name="White River Supplies" icon="questWhiteRiverSupplies" icon_color="255,255,255"/>
-		<quest_item id="2" name="Cassadore Supplies" icon="questCassadoreSupplies" icon_color="255,255,255"/>
+		<quest_item id="1" name="questWhiteRiverSupplies" description_key="questSuppliesGroupDesc" icon="questWhiteRiverSupplies" icon_color="255,255,255"/>
+		<quest_item id="2" name="questCassadoreSupplies" description_key="questSuppliesGroupDesc" icon="questCassadoreSupplies" icon_color="255,255,255"/>
 	</quest_items>
 
 	<quest_tier_rewards>
